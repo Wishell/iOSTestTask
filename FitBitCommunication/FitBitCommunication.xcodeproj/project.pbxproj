@@ -8,13 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		48F95CA12190CD51003ABA44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F95CA02190CD51003ABA44 /* AppDelegate.swift */; };
-		48F95CA32190CD51003ABA44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F95CA22190CD51003ABA44 /* ViewController.swift */; };
 		48F95CA62190CD51003ABA44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48F95CA42190CD51003ABA44 /* Main.storyboard */; };
 		48F95CA92190CD51003ABA44 /* FitBitCommunication.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48F95CA72190CD51003ABA44 /* FitBitCommunication.xcdatamodeld */; };
 		48F95CAB2190CD53003ABA44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48F95CAA2190CD53003ABA44 /* Assets.xcassets */; };
 		48F95CAE2190CD53003ABA44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48F95CAC2190CD53003ABA44 /* LaunchScreen.storyboard */; };
 		48F95CB92190CD53003ABA44 /* FitBitCommunicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F95CB82190CD53003ABA44 /* FitBitCommunicationTests.swift */; };
 		48F95CC42190CD53003ABA44 /* FitBitCommunicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F95CC32190CD53003ABA44 /* FitBitCommunicationUITests.swift */; };
+		48F95CD92190CF11003ABA44 /* LogOnModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F95CD12190CF10003ABA44 /* LogOnModelOutput.swift */; };
+		48F95CDA2190CF11003ABA44 /* LogOnViewControllerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F95CD22190CF10003ABA44 /* LogOnViewControllerInput.swift */; };
+		48F95CDB2190CF11003ABA44 /* LogOnModuleInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F95CD32190CF10003ABA44 /* LogOnModuleInitializer.swift */; };
+		48F95CDC2190CF11003ABA44 /* LogOnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F95CD42190CF10003ABA44 /* LogOnViewController.swift */; };
+		48F95CDD2190CF11003ABA44 /* LogOnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F95CD52190CF10003ABA44 /* LogOnView.swift */; };
+		48F95CDE2190CF11003ABA44 /* LogOnModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F95CD62190CF10003ABA44 /* LogOnModel.swift */; };
+		48F95CDF2190CF11003ABA44 /* LogOnModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F95CD72190CF10003ABA44 /* LogOnModelInput.swift */; };
+		48F95CE02190CF11003ABA44 /* LogOnModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F95CD82190CF11003ABA44 /* LogOnModuleConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +44,6 @@
 /* Begin PBXFileReference section */
 		48F95C9D2190CD51003ABA44 /* FitBitCommunication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitBitCommunication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F95CA02190CD51003ABA44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		48F95CA22190CD51003ABA44 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		48F95CA52190CD51003ABA44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		48F95CA82190CD51003ABA44 /* FitBitCommunication.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FitBitCommunication.xcdatamodel; sourceTree = "<group>"; };
 		48F95CAA2190CD53003ABA44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +55,14 @@
 		48F95CBF2190CD53003ABA44 /* FitBitCommunicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitBitCommunicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F95CC32190CD53003ABA44 /* FitBitCommunicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitBitCommunicationUITests.swift; sourceTree = "<group>"; };
 		48F95CC52190CD53003ABA44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48F95CD12190CF10003ABA44 /* LogOnModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOnModelOutput.swift; sourceTree = "<group>"; };
+		48F95CD22190CF10003ABA44 /* LogOnViewControllerInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOnViewControllerInput.swift; sourceTree = "<group>"; };
+		48F95CD32190CF10003ABA44 /* LogOnModuleInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOnModuleInitializer.swift; sourceTree = "<group>"; };
+		48F95CD42190CF10003ABA44 /* LogOnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOnViewController.swift; sourceTree = "<group>"; };
+		48F95CD52190CF10003ABA44 /* LogOnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOnView.swift; sourceTree = "<group>"; };
+		48F95CD62190CF10003ABA44 /* LogOnModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOnModel.swift; sourceTree = "<group>"; };
+		48F95CD72190CF10003ABA44 /* LogOnModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOnModelInput.swift; sourceTree = "<group>"; };
+		48F95CD82190CF11003ABA44 /* LogOnModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOnModuleConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +113,8 @@
 		48F95C9F2190CD51003ABA44 /* FitBitCommunication */ = {
 			isa = PBXGroup;
 			children = (
+				48F95CE12190CF15003ABA44 /* Modules */,
 				48F95CA02190CD51003ABA44 /* AppDelegate.swift */,
-				48F95CA22190CD51003ABA44 /* ViewController.swift */,
 				48F95CA42190CD51003ABA44 /* Main.storyboard */,
 				48F95CAA2190CD53003ABA44 /* Assets.xcassets */,
 				48F95CAC2190CD53003ABA44 /* LaunchScreen.storyboard */,
@@ -126,6 +140,53 @@
 				48F95CC52190CD53003ABA44 /* Info.plist */,
 			);
 			path = FitBitCommunicationUITests;
+			sourceTree = "<group>";
+		};
+		48F95CE12190CF15003ABA44 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				48F95CE22190CF2C003ABA44 /* Model */,
+				48F95CE32190CF35003ABA44 /* View */,
+				48F95CE42190CF4F003ABA44 /* Controler */,
+				48F95CE52190CF57003ABA44 /* Configurator */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		48F95CE22190CF2C003ABA44 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				48F95CD12190CF10003ABA44 /* LogOnModelOutput.swift */,
+				48F95CD62190CF10003ABA44 /* LogOnModel.swift */,
+				48F95CD72190CF10003ABA44 /* LogOnModelInput.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		48F95CE32190CF35003ABA44 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				48F95CD52190CF10003ABA44 /* LogOnView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		48F95CE42190CF4F003ABA44 /* Controler */ = {
+			isa = PBXGroup;
+			children = (
+				48F95CD22190CF10003ABA44 /* LogOnViewControllerInput.swift */,
+				48F95CD42190CF10003ABA44 /* LogOnViewController.swift */,
+			);
+			path = Controler;
+			sourceTree = "<group>";
+		};
+		48F95CE52190CF57003ABA44 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				48F95CD32190CF10003ABA44 /* LogOnModuleInitializer.swift */,
+				48F95CD82190CF11003ABA44 /* LogOnModuleConfigurator.swift */,
+			);
+			path = Configurator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +320,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48F95CE02190CF11003ABA44 /* LogOnModuleConfigurator.swift in Sources */,
+				48F95CDB2190CF11003ABA44 /* LogOnModuleInitializer.swift in Sources */,
+				48F95CDD2190CF11003ABA44 /* LogOnView.swift in Sources */,
+				48F95CD92190CF11003ABA44 /* LogOnModelOutput.swift in Sources */,
+				48F95CDF2190CF11003ABA44 /* LogOnModelInput.swift in Sources */,
+				48F95CDE2190CF11003ABA44 /* LogOnModel.swift in Sources */,
+				48F95CDC2190CF11003ABA44 /* LogOnViewController.swift in Sources */,
 				48F95CA92190CD51003ABA44 /* FitBitCommunication.xcdatamodeld in Sources */,
-				48F95CA32190CD51003ABA44 /* ViewController.swift in Sources */,
 				48F95CA12190CD51003ABA44 /* AppDelegate.swift in Sources */,
+				48F95CDA2190CF11003ABA44 /* LogOnViewControllerInput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
