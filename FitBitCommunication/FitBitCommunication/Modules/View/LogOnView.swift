@@ -53,14 +53,22 @@ extension LogOnView: LogOnViewInput {
     func shaking(fields: [Int]) {
         fields.forEach {
             if let textField = viewWithTag($0), textField is UITextField {
-                UIView.animateKeyframes(withDuration: 0.4, delay: 0.0, options: [.autoreverse], animations: {
-                    textField.frame = textField.frame.offsetBy(dx: 20, dy: 0)
+                UIView.animateKeyframes(withDuration: 0.3, delay: 0.0, options: [.autoreverse], animations: {
+                    textField.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+                    //textField.frame = textField.frame.offsetBy(dx: 20, dy: 0)
                     AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
                 }, completion: { (finish) in
-                    textField.frame = textField.frame.offsetBy(dx: -20, dy: 0)
+                    textField.transform = .identity
+                    //textField.frame = textField.frame.offsetBy(dx: -20, dy: 0)
                 })
             }
         }
+    }
+    
+    //MARK - Hide Keyboard
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        endEditing(true)
     }
     
 }
@@ -82,5 +90,7 @@ extension LogOnView : UITextFieldDelegate{
         textChange?(updateText, textField.tag)
         return true
     }
+
+
     
 }
