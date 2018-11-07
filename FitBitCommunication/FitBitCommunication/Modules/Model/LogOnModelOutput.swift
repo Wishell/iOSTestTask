@@ -6,4 +6,7 @@
 //  Copyright © 2018 Wishell. All rights reserved.
 //
 
-protocol LogOnModelOutput: class {}
+protocol LogOnModelOutput: class {
+    func modelDidLogin()
+    func modelDidFail(at fields: [Int],_ error: Error?)
+}

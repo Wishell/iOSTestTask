@@ -22,6 +22,8 @@
 		48F95CDE2190CF11003ABA44 /* LogOnModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F95CD62190CF10003ABA44 /* LogOnModel.swift */; };
 		48F95CDF2190CF11003ABA44 /* LogOnModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F95CD72190CF10003ABA44 /* LogOnModelInput.swift */; };
 		48F95CE02190CF11003ABA44 /* LogOnModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F95CD82190CF11003ABA44 /* LogOnModuleConfigurator.swift */; };
+		48F95CEF21937ED0003ABA44 /* LoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F95CEE21937ED0003ABA44 /* LoginData.swift */; };
+		48F95CF121939BB2003ABA44 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F95CF021939BB2003ABA44 /* EmailValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		48F95CD62190CF10003ABA44 /* LogOnModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOnModel.swift; sourceTree = "<group>"; };
 		48F95CD72190CF10003ABA44 /* LogOnModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOnModelInput.swift; sourceTree = "<group>"; };
 		48F95CD82190CF11003ABA44 /* LogOnModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOnModuleConfigurator.swift; sourceTree = "<group>"; };
+		48F95CEE21937ED0003ABA44 /* LoginData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginData.swift; sourceTree = "<group>"; };
+		48F95CF021939BB2003ABA44 /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +163,8 @@
 				48F95CD12190CF10003ABA44 /* LogOnModelOutput.swift */,
 				48F95CD62190CF10003ABA44 /* LogOnModel.swift */,
 				48F95CD72190CF10003ABA44 /* LogOnModelInput.swift */,
+				48F95CEE21937ED0003ABA44 /* LoginData.swift */,
+				48F95CF021939BB2003ABA44 /* EmailValidator.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -325,11 +331,13 @@
 				48F95CDD2190CF11003ABA44 /* LogOnView.swift in Sources */,
 				48F95CD92190CF11003ABA44 /* LogOnModelOutput.swift in Sources */,
 				48F95CDF2190CF11003ABA44 /* LogOnModelInput.swift in Sources */,
+				48F95CF121939BB2003ABA44 /* EmailValidator.swift in Sources */,
 				48F95CDE2190CF11003ABA44 /* LogOnModel.swift in Sources */,
 				48F95CDC2190CF11003ABA44 /* LogOnViewController.swift in Sources */,
 				48F95CA92190CD51003ABA44 /* FitBitCommunication.xcdatamodeld in Sources */,
 				48F95CA12190CD51003ABA44 /* AppDelegate.swift in Sources */,
 				48F95CDA2190CF11003ABA44 /* LogOnViewControllerInput.swift in Sources */,
+				48F95CEF21937ED0003ABA44 /* LoginData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

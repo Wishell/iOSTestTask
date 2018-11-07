@@ -6,4 +6,7 @@
 //  Copyright © 2018 Wishell. All rights reserved.
 //
 
-protocol LogOnModelInput {}
+protocol LogOnModelInput {
+    var data: LoginData {get set}
+    func login()
+}
