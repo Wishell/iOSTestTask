@@ -15,7 +15,6 @@ final class LogOnViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       // contentView.configure(available: model.data.isAllFieldSet)
         contentView.textChange = { [unowned self] (field, tag) in
             self.model.data[tag] = field
         }
@@ -39,7 +38,6 @@ extension LogOnViewController: LogOnModelOutput {
             present(alert, animated: true, completion: nil)
         }
         contentView.shaking(fields: fields)
-        
         
     }
 }

@@ -47,6 +47,7 @@ final class LogOnModel: LogOnModelInput {
                 return false
             }
         }
+        
         if isError {
             output.modelDidFail(at: errorIndex, nil)
             return false

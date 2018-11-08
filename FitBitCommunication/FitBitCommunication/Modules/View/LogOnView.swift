@@ -51,17 +51,16 @@ extension LogOnView: LogOnViewInput {
     }
     
     func shaking(fields: [Int]) {
-        fields.forEach {
-            if let textField = viewWithTag($0), textField is UITextField {
-                UIView.animateKeyframes(withDuration: 0.3, delay: 0.0, options: [.autoreverse], animations: {
-                    textField.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
-                    //textField.frame = textField.frame.offsetBy(dx: 20, dy: 0)
-                    AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
-                }, completion: { (finish) in
-                    textField.transform = .identity
-                    //textField.frame = textField.frame.offsetBy(dx: -20, dy: 0)
+        AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
+        DispatchQueue.main.async {
+            let views = fields.compactMap { self.viewWithTag($0) as? UITextField }
+            UIView.animate(withDuration: 0.2, animations: {
+                views.forEach { $0.transform = CGAffineTransform(scaleX: 1.2, y: 1.2) }
+            }, completion: { (finish) in
+                UIView.animate(withDuration: 0.2, animations: {
+                    views.forEach { $0.transform = .identity }
                 })
-            }
+            })
         }
     }
     
