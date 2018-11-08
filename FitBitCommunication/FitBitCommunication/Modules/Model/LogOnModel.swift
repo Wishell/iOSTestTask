@@ -56,7 +56,9 @@ final class LogOnModel: LogOnModelInput {
     
     func login() {
         guard self.CheckError() else {return}
+        
         print("All ok")
+        // connect to fitbit api
         
         
         

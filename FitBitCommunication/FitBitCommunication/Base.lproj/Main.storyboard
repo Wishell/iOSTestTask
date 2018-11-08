@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fXF-Rj-khh">
-                                <rect key="frame" x="64" y="301" width="247" height="30"/>
+                                <rect key="frame" x="64" y="184" width="247" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
@@ -28,7 +28,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tt4-7t-K1k">
-                                <rect key="frame" x="64" y="239" width="247" height="30"/>
+                                <rect key="frame" x="64" y="117" width="247" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="continue" enablesReturnKeyAutomatically="YES" textContentType="email"/>
@@ -37,23 +37,22 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzm-be-R3E">
-                                <rect key="frame" x="64" y="218" width="41" height="21"/>
+                                <rect key="frame" x="64" y="96" width="41" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gsp-J0-P5o">
-                                <rect key="frame" x="64" y="281" width="74" height="21"/>
+                                <rect key="frame" x="64" y="163" width="74" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4xL-FY-CR5">
-                                <rect key="frame" x="100" y="377" width="175" height="50"/>
+                                <rect key="frame" x="118" y="264" width="139" height="39.5"/>
                                 <color key="backgroundColor" red="0.098039215690000001" green="0.46274509800000002" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="4xL-FY-CR5" secondAttribute="height" multiplier="7:2" id="Dwl-Ps-WET"/>
-                                    <constraint firstAttribute="width" constant="175" id="hB3-yN-0Ft"/>
                                 </constraints>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -74,20 +73,19 @@
                             <accessibilityTraits key="traits" selected="YES"/>
                         </accessibility>
                         <constraints>
-                            <constraint firstItem="fXF-Rj-khh" firstAttribute="top" secondItem="Gsp-J0-P5o" secondAttribute="bottom" constant="-1" id="1fA-Ut-IyR"/>
-                            <constraint firstItem="tt4-7t-K1k" firstAttribute="top" secondItem="bUh-ZJ-0Gp" secondAttribute="top" constant="175" id="9Mf-cB-RJ2"/>
+                            <constraint firstItem="fXF-Rj-khh" firstAttribute="top" secondItem="Gsp-J0-P5o" secondAttribute="bottom" id="1fA-Ut-IyR"/>
+                            <constraint firstItem="Gsp-J0-P5o" firstAttribute="top" secondItem="tt4-7t-K1k" secondAttribute="bottom" constant="16" id="1z3-SI-KTj"/>
                             <constraint firstItem="fXF-Rj-khh" firstAttribute="leading" secondItem="tt4-7t-K1k" secondAttribute="leading" id="ENp-09-Qrm"/>
                             <constraint firstItem="yzm-be-R3E" firstAttribute="leading" secondItem="tt4-7t-K1k" secondAttribute="leading" id="GrV-4v-bmI"/>
+                            <constraint firstItem="4xL-FY-CR5" firstAttribute="width" secondItem="fXF-Rj-khh" secondAttribute="width" multiplier="9:16" id="I54-Ou-VNT"/>
                             <constraint firstItem="tt4-7t-K1k" firstAttribute="leading" secondItem="bUh-ZJ-0Gp" secondAttribute="leading" constant="64" id="KgJ-S5-EpB"/>
-                            <constraint firstItem="bUh-ZJ-0Gp" firstAttribute="trailing" secondItem="4xL-FY-CR5" secondAttribute="trailing" constant="100" id="Lcn-TZ-4iD"/>
+                            <constraint firstItem="4xL-FY-CR5" firstAttribute="top" secondItem="fXF-Rj-khh" secondAttribute="bottom" constant="50" id="VDa-1I-f5m"/>
                             <constraint firstItem="bUh-ZJ-0Gp" firstAttribute="trailing" secondItem="tt4-7t-K1k" secondAttribute="trailing" constant="64" id="aLO-Zb-4h2"/>
                             <constraint firstItem="fXF-Rj-khh" firstAttribute="width" secondItem="tt4-7t-K1k" secondAttribute="width" id="gq5-6v-7vF"/>
-                            <constraint firstItem="fXF-Rj-khh" firstAttribute="top" secondItem="tt4-7t-K1k" secondAttribute="bottom" constant="32" id="m7V-5D-fRc"/>
                             <constraint firstItem="tt4-7t-K1k" firstAttribute="top" secondItem="yzm-be-R3E" secondAttribute="bottom" id="o0h-w7-62i"/>
+                            <constraint firstItem="yzm-be-R3E" firstAttribute="top" secondItem="bUh-ZJ-0Gp" secondAttribute="top" constant="32" id="t8q-YO-0Q1"/>
                             <constraint firstItem="4xL-FY-CR5" firstAttribute="centerX" secondItem="bUh-ZJ-0Gp" secondAttribute="centerX" id="tWG-32-K6d"/>
-                            <constraint firstItem="4xL-FY-CR5" firstAttribute="leading" secondItem="bUh-ZJ-0Gp" secondAttribute="leading" constant="100" id="uzc-AN-JKG"/>
                             <constraint firstItem="Gsp-J0-P5o" firstAttribute="leading" secondItem="fXF-Rj-khh" secondAttribute="leading" id="x4o-os-s49"/>
-                            <constraint firstItem="bUh-ZJ-0Gp" firstAttribute="bottom" secondItem="4xL-FY-CR5" secondAttribute="bottom" constant="240" id="xFG-Ke-jhO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bUh-ZJ-0Gp"/>
                         <connections>
