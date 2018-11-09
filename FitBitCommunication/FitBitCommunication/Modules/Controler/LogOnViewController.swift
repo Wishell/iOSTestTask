@@ -44,3 +44,4 @@ extension LogOnViewController: LogOnModelOutput {
 
 // MARK: - LogOnViewControllerInput
 extension LogOnViewController: LogOnViewControllerInput {}
+

@@ -22,10 +22,9 @@ extension LogOnError: LocalizedError {
     
 }
 
+// todo make password validator
 final class LogOnModel: LogOnModelInput {
 
-    
-    // to do make function returned indexes
     weak var output: LogOnModelOutput!
     var data: LoginData = LoginData()
     
@@ -33,13 +32,14 @@ final class LogOnModel: LogOnModelInput {
         var errorIndex: [Int] = []
         var isError = false
         
-        if data.email.isEmpty {
-            isError = true
-            errorIndex.append(Meta.email.rawValue)
-        }
         if data.password.isEmpty {
             isError = true
             errorIndex.append(Meta.password.rawValue)
+        }
+        
+        if data.email.isEmpty {
+            isError = true
+            errorIndex.append(Meta.email.rawValue)
         } else {
             guard EmailValidator.isEmailValid(data.email) else {
                 errorIndex.append(Meta.email.rawValue)
@@ -47,7 +47,7 @@ final class LogOnModel: LogOnModelInput {
                 return false
             }
         }
-        
+
         if isError {
             output.modelDidFail(at: errorIndex, nil)
             return false

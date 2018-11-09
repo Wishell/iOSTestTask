@@ -33,14 +33,17 @@ final class LogOnView: UIView {
         action?()
     }
     
+    
+
+    
     var textChange: ((String, Int)->Void)?
     var action: (()->Void)?
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        let textFields: [UITextField] = self.subviews.compactMap { $0 as? UITextField }
+        textFields.forEach{ $0.addTarget(self, action: #selector(textFieldDidChange(textField:)), for: .editingChanged) }
     }
-    
 }
 
 // MARK: - LogOnViewInput
@@ -64,6 +67,7 @@ extension LogOnView: LogOnViewInput {
         }
     }
     
+    
     //MARK - Hide Keyboard
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
@@ -80,16 +84,12 @@ extension LogOnView : UITextFieldDelegate{
         return true
     }
     
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+    @objc func textFieldDidChange(textField:UITextField){
         guard let text = textField.text else {
             textChange?("", textField.tag)
-            return false}
-        let textRange = Range(range, in: text)
-        let updateText = text.replacingCharacters(in: textRange!, with: string)
-        textChange?(updateText, textField.tag)
-        return true
+            return}
+         textChange?(text, textField.tag)
     }
-
 
     
 }
