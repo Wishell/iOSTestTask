@@ -1,0 +1,792 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24EE386A342A8D15B2940D0A /* Pods_FitBitApiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBAE8E6D6DBB9F8DAFACFB19 /* Pods_FitBitApiUITests.framework */; };
+		2A96269D8AA44F1F4C8C85D1 /* Pods_FitBitApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 055ED40F75E389E2736DCC1D /* Pods_FitBitApi.framework */; };
+		48E4A9FD219B56C20024FAFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4A9FC219B56C20024FAFB /* AppDelegate.swift */; };
+		48E4A9FF219B56C20024FAFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4A9FE219B56C20024FAFB /* ViewController.swift */; };
+		48E4AA02219B56C20024FAFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48E4AA00219B56C20024FAFB /* Main.storyboard */; };
+		48E4AA04219B56C30024FAFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48E4AA03219B56C30024FAFB /* Assets.xcassets */; };
+		48E4AA07219B56C30024FAFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48E4AA05219B56C30024FAFB /* LaunchScreen.storyboard */; };
+		48E4AA12219B56C30024FAFB /* FitBitApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA11219B56C30024FAFB /* FitBitApiTests.swift */; };
+		48E4AA1D219B56C40024FAFB /* FitBitApiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA1C219B56C40024FAFB /* FitBitApiUITests.swift */; };
+		48E4AA33219B57CA0024FAFB /* AutorizationModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA2B219B57CA0024FAFB /* AutorizationModelOutput.swift */; };
+		48E4AA34219B57CA0024FAFB /* AutorizationViewControllerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA2C219B57CA0024FAFB /* AutorizationViewControllerInput.swift */; };
+		48E4AA35219B57CA0024FAFB /* AutorizationModuleInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA2D219B57CA0024FAFB /* AutorizationModuleInitializer.swift */; };
+		48E4AA36219B57CA0024FAFB /* AutorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA2E219B57CA0024FAFB /* AutorizationViewController.swift */; };
+		48E4AA37219B57CA0024FAFB /* AutorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA2F219B57CA0024FAFB /* AutorizationView.swift */; };
+		48E4AA38219B57CA0024FAFB /* AutorizationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA30219B57CA0024FAFB /* AutorizationModel.swift */; };
+		48E4AA39219B57CA0024FAFB /* AutorizationModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA31219B57CA0024FAFB /* AutorizationModelInput.swift */; };
+		48E4AA3A219B57CA0024FAFB /* AutorizationModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA32219B57CA0024FAFB /* AutorizationModuleConfigurator.swift */; };
+		48E4AA40219B580F0024FAFB /* OaythManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA3F219B580F0024FAFB /* OaythManager.swift */; };
+		9ABC68922AC1DFD590F61746 /* Pods_FitBitApiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA00072470642AB5A420C652 /* Pods_FitBitApiTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		48E4AA0E219B56C30024FAFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48E4A9F1219B56C20024FAFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48E4A9F8219B56C20024FAFB;
+			remoteInfo = FitBitApi;
+		};
+		48E4AA19219B56C40024FAFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48E4A9F1219B56C20024FAFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48E4A9F8219B56C20024FAFB;
+			remoteInfo = FitBitApi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		055ED40F75E389E2736DCC1D /* Pods_FitBitApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitBitApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		179B8D86B7DD3653872CB5E6 /* Pods-FitBitApiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitBitApiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FitBitApiUITests/Pods-FitBitApiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		43E1AAC63C6E0D51534D1A17 /* Pods-FitBitApi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitBitApi.release.xcconfig"; path = "Pods/Target Support Files/Pods-FitBitApi/Pods-FitBitApi.release.xcconfig"; sourceTree = "<group>"; };
+		48E4A9F9219B56C20024FAFB /* FitBitApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitBitApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48E4A9FC219B56C20024FAFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		48E4A9FE219B56C20024FAFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		48E4AA01219B56C20024FAFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		48E4AA03219B56C30024FAFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		48E4AA06219B56C30024FAFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		48E4AA08219B56C30024FAFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48E4AA0D219B56C30024FAFB /* FitBitApiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitBitApiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		48E4AA11219B56C30024FAFB /* FitBitApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitBitApiTests.swift; sourceTree = "<group>"; };
+		48E4AA13219B56C30024FAFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48E4AA18219B56C30024FAFB /* FitBitApiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitBitApiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		48E4AA1C219B56C40024FAFB /* FitBitApiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitBitApiUITests.swift; sourceTree = "<group>"; };
+		48E4AA1E219B56C40024FAFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48E4AA2B219B57CA0024FAFB /* AutorizationModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutorizationModelOutput.swift; sourceTree = "<group>"; };
+		48E4AA2C219B57CA0024FAFB /* AutorizationViewControllerInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutorizationViewControllerInput.swift; sourceTree = "<group>"; };
+		48E4AA2D219B57CA0024FAFB /* AutorizationModuleInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutorizationModuleInitializer.swift; sourceTree = "<group>"; };
+		48E4AA2E219B57CA0024FAFB /* AutorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutorizationViewController.swift; sourceTree = "<group>"; };
+		48E4AA2F219B57CA0024FAFB /* AutorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutorizationView.swift; sourceTree = "<group>"; };
+		48E4AA30219B57CA0024FAFB /* AutorizationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutorizationModel.swift; sourceTree = "<group>"; };
+		48E4AA31219B57CA0024FAFB /* AutorizationModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutorizationModelInput.swift; sourceTree = "<group>"; };
+		48E4AA32219B57CA0024FAFB /* AutorizationModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutorizationModuleConfigurator.swift; sourceTree = "<group>"; };
+		48E4AA3F219B580F0024FAFB /* OaythManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OaythManager.swift; sourceTree = "<group>"; };
+		6B4275F4C3FF91D3BF411CB1 /* Pods-FitBitApi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitBitApi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FitBitApi/Pods-FitBitApi.debug.xcconfig"; sourceTree = "<group>"; };
+		A37DADC9F7D3156322FEE709 /* Pods-FitBitApiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitBitApiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FitBitApiUITests/Pods-FitBitApiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C6D4A0203AA4693F948326D9 /* Pods-FitBitApiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitBitApiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FitBitApiTests/Pods-FitBitApiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CA00072470642AB5A420C652 /* Pods_FitBitApiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitBitApiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBAE8E6D6DBB9F8DAFACFB19 /* Pods_FitBitApiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitBitApiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D52D35E7FBAC23C0D98B01ED /* Pods-FitBitApiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitBitApiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FitBitApiTests/Pods-FitBitApiTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48E4A9F6219B56C20024FAFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A96269D8AA44F1F4C8C85D1 /* Pods_FitBitApi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48E4AA0A219B56C30024FAFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ABC68922AC1DFD590F61746 /* Pods_FitBitApiTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48E4AA15219B56C30024FAFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24EE386A342A8D15B2940D0A /* Pods_FitBitApiUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1AC2E946591ECE30CBFC0093 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				055ED40F75E389E2736DCC1D /* Pods_FitBitApi.framework */,
+				CA00072470642AB5A420C652 /* Pods_FitBitApiTests.framework */,
+				CBAE8E6D6DBB9F8DAFACFB19 /* Pods_FitBitApiUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		48E4A9F0219B56C20024FAFB = {
+			isa = PBXGroup;
+			children = (
+				48E4A9FB219B56C20024FAFB /* FitBitApi */,
+				48E4AA10219B56C30024FAFB /* FitBitApiTests */,
+				48E4AA1B219B56C40024FAFB /* FitBitApiUITests */,
+				48E4A9FA219B56C20024FAFB /* Products */,
+				970FEFF3BC3AD5412B9A26E5 /* Pods */,
+				1AC2E946591ECE30CBFC0093 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		48E4A9FA219B56C20024FAFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48E4A9F9219B56C20024FAFB /* FitBitApi.app */,
+				48E4AA0D219B56C30024FAFB /* FitBitApiTests.xctest */,
+				48E4AA18219B56C30024FAFB /* FitBitApiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48E4A9FB219B56C20024FAFB /* FitBitApi */ = {
+			isa = PBXGroup;
+			children = (
+				48E4AA2A219B57BC0024FAFB /* Modules */,
+				48E4A9FC219B56C20024FAFB /* AppDelegate.swift */,
+				48E4A9FE219B56C20024FAFB /* ViewController.swift */,
+				48E4AA00219B56C20024FAFB /* Main.storyboard */,
+				48E4AA03219B56C30024FAFB /* Assets.xcassets */,
+				48E4AA05219B56C30024FAFB /* LaunchScreen.storyboard */,
+				48E4AA08219B56C30024FAFB /* Info.plist */,
+			);
+			path = FitBitApi;
+			sourceTree = "<group>";
+		};
+		48E4AA10219B56C30024FAFB /* FitBitApiTests */ = {
+			isa = PBXGroup;
+			children = (
+				48E4AA11219B56C30024FAFB /* FitBitApiTests.swift */,
+				48E4AA13219B56C30024FAFB /* Info.plist */,
+			);
+			path = FitBitApiTests;
+			sourceTree = "<group>";
+		};
+		48E4AA1B219B56C40024FAFB /* FitBitApiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				48E4AA1C219B56C40024FAFB /* FitBitApiUITests.swift */,
+				48E4AA1E219B56C40024FAFB /* Info.plist */,
+			);
+			path = FitBitApiUITests;
+			sourceTree = "<group>";
+		};
+		48E4AA2A219B57BC0024FAFB /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				48E4AA3B219B57DA0024FAFB /* Model */,
+				48E4AA3C219B57E50024FAFB /* Controller */,
+				48E4AA3E219B57F50024FAFB /* Configurator */,
+				48E4AA3D219B57ED0024FAFB /* View */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		48E4AA3B219B57DA0024FAFB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				48E4AA2B219B57CA0024FAFB /* AutorizationModelOutput.swift */,
+				48E4AA30219B57CA0024FAFB /* AutorizationModel.swift */,
+				48E4AA31219B57CA0024FAFB /* AutorizationModelInput.swift */,
+				48E4AA3F219B580F0024FAFB /* OaythManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		48E4AA3C219B57E50024FAFB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				48E4AA2C219B57CA0024FAFB /* AutorizationViewControllerInput.swift */,
+				48E4AA2E219B57CA0024FAFB /* AutorizationViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		48E4AA3D219B57ED0024FAFB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				48E4AA2F219B57CA0024FAFB /* AutorizationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		48E4AA3E219B57F50024FAFB /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				48E4AA2D219B57CA0024FAFB /* AutorizationModuleInitializer.swift */,
+				48E4AA32219B57CA0024FAFB /* AutorizationModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		970FEFF3BC3AD5412B9A26E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B4275F4C3FF91D3BF411CB1 /* Pods-FitBitApi.debug.xcconfig */,
+				43E1AAC63C6E0D51534D1A17 /* Pods-FitBitApi.release.xcconfig */,
+				C6D4A0203AA4693F948326D9 /* Pods-FitBitApiTests.debug.xcconfig */,
+				D52D35E7FBAC23C0D98B01ED /* Pods-FitBitApiTests.release.xcconfig */,
+				179B8D86B7DD3653872CB5E6 /* Pods-FitBitApiUITests.debug.xcconfig */,
+				A37DADC9F7D3156322FEE709 /* Pods-FitBitApiUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		48E4A9F8219B56C20024FAFB /* FitBitApi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48E4AA21219B56C40024FAFB /* Build configuration list for PBXNativeTarget "FitBitApi" */;
+			buildPhases = (
+				6853C9D2F26AEA1D7579DD82 /* [CP] Check Pods Manifest.lock */,
+				48E4A9F5219B56C20024FAFB /* Sources */,
+				48E4A9F6219B56C20024FAFB /* Frameworks */,
+				48E4A9F7219B56C20024FAFB /* Resources */,
+				757436048D9920988EFB8047 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FitBitApi;
+			productName = FitBitApi;
+			productReference = 48E4A9F9219B56C20024FAFB /* FitBitApi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		48E4AA0C219B56C30024FAFB /* FitBitApiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48E4AA24219B56C40024FAFB /* Build configuration list for PBXNativeTarget "FitBitApiTests" */;
+			buildPhases = (
+				D0A23BEDCC1F96F101A06422 /* [CP] Check Pods Manifest.lock */,
+				48E4AA09219B56C30024FAFB /* Sources */,
+				48E4AA0A219B56C30024FAFB /* Frameworks */,
+				48E4AA0B219B56C30024FAFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48E4AA0F219B56C30024FAFB /* PBXTargetDependency */,
+			);
+			name = FitBitApiTests;
+			productName = FitBitApiTests;
+			productReference = 48E4AA0D219B56C30024FAFB /* FitBitApiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		48E4AA17219B56C30024FAFB /* FitBitApiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48E4AA27219B56C40024FAFB /* Build configuration list for PBXNativeTarget "FitBitApiUITests" */;
+			buildPhases = (
+				D763DD736FCE639EE0860123 /* [CP] Check Pods Manifest.lock */,
+				48E4AA14219B56C30024FAFB /* Sources */,
+				48E4AA15219B56C30024FAFB /* Frameworks */,
+				48E4AA16219B56C30024FAFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48E4AA1A219B56C40024FAFB /* PBXTargetDependency */,
+			);
+			name = FitBitApiUITests;
+			productName = FitBitApiUITests;
+			productReference = 48E4AA18219B56C30024FAFB /* FitBitApiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		48E4A9F1219B56C20024FAFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Wishell;
+				TargetAttributes = {
+					48E4A9F8219B56C20024FAFB = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					48E4AA0C219B56C30024FAFB = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 48E4A9F8219B56C20024FAFB;
+					};
+					48E4AA17219B56C30024FAFB = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 48E4A9F8219B56C20024FAFB;
+					};
+				};
+			};
+			buildConfigurationList = 48E4A9F4219B56C20024FAFB /* Build configuration list for PBXProject "FitBitApi" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 48E4A9F0219B56C20024FAFB;
+			productRefGroup = 48E4A9FA219B56C20024FAFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				48E4A9F8219B56C20024FAFB /* FitBitApi */,
+				48E4AA0C219B56C30024FAFB /* FitBitApiTests */,
+				48E4AA17219B56C30024FAFB /* FitBitApiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		48E4A9F7219B56C20024FAFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48E4AA07219B56C30024FAFB /* LaunchScreen.storyboard in Resources */,
+				48E4AA04219B56C30024FAFB /* Assets.xcassets in Resources */,
+				48E4AA02219B56C20024FAFB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48E4AA0B219B56C30024FAFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48E4AA16219B56C30024FAFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6853C9D2F26AEA1D7579DD82 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FitBitApi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		757436048D9920988EFB8047 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FitBitApi/Pods-FitBitApi-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FitBitApi/Pods-FitBitApi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0A23BEDCC1F96F101A06422 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FitBitApiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D763DD736FCE639EE0860123 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FitBitApiUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48E4A9F5219B56C20024FAFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48E4AA36219B57CA0024FAFB /* AutorizationViewController.swift in Sources */,
+				48E4AA34219B57CA0024FAFB /* AutorizationViewControllerInput.swift in Sources */,
+				48E4AA40219B580F0024FAFB /* OaythManager.swift in Sources */,
+				48E4AA35219B57CA0024FAFB /* AutorizationModuleInitializer.swift in Sources */,
+				48E4AA37219B57CA0024FAFB /* AutorizationView.swift in Sources */,
+				48E4AA39219B57CA0024FAFB /* AutorizationModelInput.swift in Sources */,
+				48E4AA38219B57CA0024FAFB /* AutorizationModel.swift in Sources */,
+				48E4A9FF219B56C20024FAFB /* ViewController.swift in Sources */,
+				48E4AA3A219B57CA0024FAFB /* AutorizationModuleConfigurator.swift in Sources */,
+				48E4A9FD219B56C20024FAFB /* AppDelegate.swift in Sources */,
+				48E4AA33219B57CA0024FAFB /* AutorizationModelOutput.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48E4AA09219B56C30024FAFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48E4AA12219B56C30024FAFB /* FitBitApiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48E4AA14219B56C30024FAFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48E4AA1D219B56C40024FAFB /* FitBitApiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		48E4AA0F219B56C30024FAFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48E4A9F8219B56C20024FAFB /* FitBitApi */;
+			targetProxy = 48E4AA0E219B56C30024FAFB /* PBXContainerItemProxy */;
+		};
+		48E4AA1A219B56C40024FAFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48E4A9F8219B56C20024FAFB /* FitBitApi */;
+			targetProxy = 48E4AA19219B56C40024FAFB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		48E4AA00219B56C20024FAFB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48E4AA01219B56C20024FAFB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		48E4AA05219B56C30024FAFB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48E4AA06219B56C30024FAFB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		48E4AA1F219B56C40024FAFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		48E4AA20219B56C40024FAFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		48E4AA22219B56C40024FAFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B4275F4C3FF91D3BF411CB1 /* Pods-FitBitApi.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C4VC275U8N;
+				INFOPLIST_FILE = FitBitApi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vishnevsky.FitBitApi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		48E4AA23219B56C40024FAFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43E1AAC63C6E0D51534D1A17 /* Pods-FitBitApi.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C4VC275U8N;
+				INFOPLIST_FILE = FitBitApi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vishnevsky.FitBitApi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		48E4AA25219B56C40024FAFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6D4A0203AA4693F948326D9 /* Pods-FitBitApiTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C4VC275U8N;
+				INFOPLIST_FILE = FitBitApiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vishnevsky.FitBitApiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FitBitApi.app/FitBitApi";
+			};
+			name = Debug;
+		};
+		48E4AA26219B56C40024FAFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D52D35E7FBAC23C0D98B01ED /* Pods-FitBitApiTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C4VC275U8N;
+				INFOPLIST_FILE = FitBitApiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vishnevsky.FitBitApiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FitBitApi.app/FitBitApi";
+			};
+			name = Release;
+		};
+		48E4AA28219B56C40024FAFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 179B8D86B7DD3653872CB5E6 /* Pods-FitBitApiUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C4VC275U8N;
+				INFOPLIST_FILE = FitBitApiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vishnevsky.FitBitApiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FitBitApi;
+			};
+			name = Debug;
+		};
+		48E4AA29219B56C40024FAFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A37DADC9F7D3156322FEE709 /* Pods-FitBitApiUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C4VC275U8N;
+				INFOPLIST_FILE = FitBitApiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vishnevsky.FitBitApiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FitBitApi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		48E4A9F4219B56C20024FAFB /* Build configuration list for PBXProject "FitBitApi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48E4AA1F219B56C40024FAFB /* Debug */,
+				48E4AA20219B56C40024FAFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48E4AA21219B56C40024FAFB /* Build configuration list for PBXNativeTarget "FitBitApi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48E4AA22219B56C40024FAFB /* Debug */,
+				48E4AA23219B56C40024FAFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48E4AA24219B56C40024FAFB /* Build configuration list for PBXNativeTarget "FitBitApiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48E4AA25219B56C40024FAFB /* Debug */,
+				48E4AA26219B56C40024FAFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48E4AA27219B56C40024FAFB /* Build configuration list for PBXNativeTarget "FitBitApiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48E4AA28219B56C40024FAFB /* Debug */,
+				48E4AA29219B56C40024FAFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 48E4A9F1219B56C20024FAFB /* Project object */;
+}
