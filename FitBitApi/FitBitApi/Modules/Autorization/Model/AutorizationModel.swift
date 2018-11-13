@@ -18,9 +18,9 @@ final class AutorizationModel: AutorizationModelInput {
         repository.getActivity{ (result) in
             switch result {
             case .success(let items):
-                //self.output.modelDidSucces(items)
+                self.output.modelDidSucces(items)
             case .failure(let error):
-                //self.output.modelDidFail()
+                self.output.modelDidFail()
             }
         }
     }

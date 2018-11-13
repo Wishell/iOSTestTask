@@ -6,4 +6,7 @@
 //  Copyright © 2018 Wishell. All rights reserved.
 //
 
-protocol AutorizationModelOutput: class {}
+protocol AutorizationModelOutput: class {
+    func modelDidSucces(_ data: Activity)
+    func modelDidFail()
+}

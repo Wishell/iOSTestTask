@@ -47,10 +47,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         oauthManager.handle(url) // TODO error handling
 
         let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-
+        
+        let vc: AutorizationViewController = storyboard.instantiateViewController(withIdentifier: "AutorizationViewController") as! AutorizationViewController
+        self.window?.rootViewController = vc
+        
         let controller: AutorizationViewControllerInput = storyboard.instantiateViewController(withIdentifier: "AutorizationViewController") as! AutorizationViewControllerInput
         
-        controller.login()
+        DispatchQueue.main.async {
+            controller.login()
+        }
+
 
         
         return true

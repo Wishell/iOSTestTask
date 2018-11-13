@@ -31,7 +31,17 @@ final class AutorizationViewController: UIViewController {
 }
 
 // MARK: - AutorizationModelOutput
-extension AutorizationViewController: AutorizationModelOutput {}
+extension AutorizationViewController: AutorizationModelOutput {
+    
+    func modelDidSucces(_ data: Activity) {
+        data.categories.forEach { print($0)
+        }
+    }
+    
+    func modelDidFail() {
+        print("AlertController")
+    }
+}
 
 // MARK: - AutorizationViewControllerInput
 extension AutorizationViewController: AutorizationViewControllerInput {
