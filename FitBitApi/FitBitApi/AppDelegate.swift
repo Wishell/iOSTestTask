@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KeychainAccess
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -40,7 +41,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        let oauthManager = OauthManager()
+        oauthManager.handle(url) // TODO error handling
 
+        let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+
+        let controller: AutorizationViewControllerInput = storyboard.instantiateViewController(withIdentifier: "AutorizationViewController") as! AutorizationViewControllerInput
+        
+        controller.login()
+
+        
+        return true
+    }
 
 }
 

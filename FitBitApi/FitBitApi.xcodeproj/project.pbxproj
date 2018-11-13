@@ -10,7 +10,6 @@
 		24EE386A342A8D15B2940D0A /* Pods_FitBitApiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBAE8E6D6DBB9F8DAFACFB19 /* Pods_FitBitApiUITests.framework */; };
 		2A96269D8AA44F1F4C8C85D1 /* Pods_FitBitApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 055ED40F75E389E2736DCC1D /* Pods_FitBitApi.framework */; };
 		48E4A9FD219B56C20024FAFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4A9FC219B56C20024FAFB /* AppDelegate.swift */; };
-		48E4A9FF219B56C20024FAFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4A9FE219B56C20024FAFB /* ViewController.swift */; };
 		48E4AA02219B56C20024FAFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48E4AA00219B56C20024FAFB /* Main.storyboard */; };
 		48E4AA04219B56C30024FAFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48E4AA03219B56C30024FAFB /* Assets.xcassets */; };
 		48E4AA07219B56C30024FAFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48E4AA05219B56C30024FAFB /* LaunchScreen.storyboard */; };
@@ -24,7 +23,18 @@
 		48E4AA38219B57CA0024FAFB /* AutorizationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA30219B57CA0024FAFB /* AutorizationModel.swift */; };
 		48E4AA39219B57CA0024FAFB /* AutorizationModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA31219B57CA0024FAFB /* AutorizationModelInput.swift */; };
 		48E4AA3A219B57CA0024FAFB /* AutorizationModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA32219B57CA0024FAFB /* AutorizationModuleConfigurator.swift */; };
-		48E4AA40219B580F0024FAFB /* OaythManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA3F219B580F0024FAFB /* OaythManager.swift */; };
+		48E4AA40219B580F0024FAFB /* OauthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA3F219B580F0024FAFB /* OauthManager.swift */; };
+		48E4AA42219B6E820024FAFB /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA41219B6E820024FAFB /* APIClient.swift */; };
+		48E4AA4D219B73B00024FAFB /* PresenterModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA45219B73B00024FAFB /* PresenterModelOutput.swift */; };
+		48E4AA4E219B73B00024FAFB /* PresenterViewControllerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA46219B73B00024FAFB /* PresenterViewControllerInput.swift */; };
+		48E4AA4F219B73B00024FAFB /* PresenterModuleInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA47219B73B00024FAFB /* PresenterModuleInitializer.swift */; };
+		48E4AA50219B73B00024FAFB /* PresenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA48219B73B00024FAFB /* PresenterViewController.swift */; };
+		48E4AA51219B73B00024FAFB /* PresenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA49219B73B00024FAFB /* PresenterView.swift */; };
+		48E4AA52219B73B00024FAFB /* PresenterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA4A219B73B00024FAFB /* PresenterModel.swift */; };
+		48E4AA53219B73B00024FAFB /* PresenterModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA4B219B73B00024FAFB /* PresenterModelInput.swift */; };
+		48E4AA54219B73B00024FAFB /* PresenterModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA4C219B73B00024FAFB /* PresenterModuleConfigurator.swift */; };
+		48E4AA5B219B7A5A0024FAFB /* KeychainSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA5A219B7A5A0024FAFB /* KeychainSingleton.swift */; };
+		48E4AA5D219B7CA60024FAFB /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA5C219B7CA60024FAFB /* Repository.swift */; };
 		9ABC68922AC1DFD590F61746 /* Pods_FitBitApiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA00072470642AB5A420C652 /* Pods_FitBitApiTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +61,6 @@
 		43E1AAC63C6E0D51534D1A17 /* Pods-FitBitApi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitBitApi.release.xcconfig"; path = "Pods/Target Support Files/Pods-FitBitApi/Pods-FitBitApi.release.xcconfig"; sourceTree = "<group>"; };
 		48E4A9F9219B56C20024FAFB /* FitBitApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitBitApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E4A9FC219B56C20024FAFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		48E4A9FE219B56C20024FAFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		48E4AA01219B56C20024FAFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		48E4AA03219B56C30024FAFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48E4AA06219B56C30024FAFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -70,7 +79,18 @@
 		48E4AA30219B57CA0024FAFB /* AutorizationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutorizationModel.swift; sourceTree = "<group>"; };
 		48E4AA31219B57CA0024FAFB /* AutorizationModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutorizationModelInput.swift; sourceTree = "<group>"; };
 		48E4AA32219B57CA0024FAFB /* AutorizationModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutorizationModuleConfigurator.swift; sourceTree = "<group>"; };
-		48E4AA3F219B580F0024FAFB /* OaythManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OaythManager.swift; sourceTree = "<group>"; };
+		48E4AA3F219B580F0024FAFB /* OauthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OauthManager.swift; sourceTree = "<group>"; };
+		48E4AA41219B6E820024FAFB /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		48E4AA45219B73B00024FAFB /* PresenterModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterModelOutput.swift; sourceTree = "<group>"; };
+		48E4AA46219B73B00024FAFB /* PresenterViewControllerInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterViewControllerInput.swift; sourceTree = "<group>"; };
+		48E4AA47219B73B00024FAFB /* PresenterModuleInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterModuleInitializer.swift; sourceTree = "<group>"; };
+		48E4AA48219B73B00024FAFB /* PresenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterViewController.swift; sourceTree = "<group>"; };
+		48E4AA49219B73B00024FAFB /* PresenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterView.swift; sourceTree = "<group>"; };
+		48E4AA4A219B73B00024FAFB /* PresenterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterModel.swift; sourceTree = "<group>"; };
+		48E4AA4B219B73B00024FAFB /* PresenterModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterModelInput.swift; sourceTree = "<group>"; };
+		48E4AA4C219B73B00024FAFB /* PresenterModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterModuleConfigurator.swift; sourceTree = "<group>"; };
+		48E4AA5A219B7A5A0024FAFB /* KeychainSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainSingleton.swift; sourceTree = "<group>"; };
+		48E4AA5C219B7CA60024FAFB /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		6B4275F4C3FF91D3BF411CB1 /* Pods-FitBitApi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitBitApi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FitBitApi/Pods-FitBitApi.debug.xcconfig"; sourceTree = "<group>"; };
 		A37DADC9F7D3156322FEE709 /* Pods-FitBitApiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitBitApiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FitBitApiUITests/Pods-FitBitApiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C6D4A0203AA4693F948326D9 /* Pods-FitBitApiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitBitApiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FitBitApiTests/Pods-FitBitApiTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -142,9 +162,9 @@
 		48E4A9FB219B56C20024FAFB /* FitBitApi */ = {
 			isa = PBXGroup;
 			children = (
+				48E4AA59219B7A2D0024FAFB /* KeychainSingleton */,
 				48E4AA2A219B57BC0024FAFB /* Modules */,
 				48E4A9FC219B56C20024FAFB /* AppDelegate.swift */,
-				48E4A9FE219B56C20024FAFB /* ViewController.swift */,
 				48E4AA00219B56C20024FAFB /* Main.storyboard */,
 				48E4AA03219B56C30024FAFB /* Assets.xcassets */,
 				48E4AA05219B56C30024FAFB /* LaunchScreen.storyboard */,
@@ -174,10 +194,8 @@
 		48E4AA2A219B57BC0024FAFB /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				48E4AA3B219B57DA0024FAFB /* Model */,
-				48E4AA3C219B57E50024FAFB /* Controller */,
-				48E4AA3E219B57F50024FAFB /* Configurator */,
-				48E4AA3D219B57ED0024FAFB /* View */,
+				48E4AA44219B739C0024FAFB /* Presenter */,
+				48E4AA43219B73840024FAFB /* Autorization */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -188,7 +206,9 @@
 				48E4AA2B219B57CA0024FAFB /* AutorizationModelOutput.swift */,
 				48E4AA30219B57CA0024FAFB /* AutorizationModel.swift */,
 				48E4AA31219B57CA0024FAFB /* AutorizationModelInput.swift */,
-				48E4AA3F219B580F0024FAFB /* OaythManager.swift */,
+				48E4AA3F219B580F0024FAFB /* OauthManager.swift */,
+				48E4AA41219B6E820024FAFB /* APIClient.swift */,
+				48E4AA5C219B7CA60024FAFB /* Repository.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -217,6 +237,72 @@
 				48E4AA32219B57CA0024FAFB /* AutorizationModuleConfigurator.swift */,
 			);
 			path = Configurator;
+			sourceTree = "<group>";
+		};
+		48E4AA43219B73840024FAFB /* Autorization */ = {
+			isa = PBXGroup;
+			children = (
+				48E4AA3B219B57DA0024FAFB /* Model */,
+				48E4AA3C219B57E50024FAFB /* Controller */,
+				48E4AA3E219B57F50024FAFB /* Configurator */,
+				48E4AA3D219B57ED0024FAFB /* View */,
+			);
+			path = Autorization;
+			sourceTree = "<group>";
+		};
+		48E4AA44219B739C0024FAFB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				48E4AA55219B73B90024FAFB /* Model */,
+				48E4AA56219B73C00024FAFB /* Controller */,
+				48E4AA57219B73CB0024FAFB /* Configurator */,
+				48E4AA58219B73D50024FAFB /* View */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		48E4AA55219B73B90024FAFB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				48E4AA45219B73B00024FAFB /* PresenterModelOutput.swift */,
+				48E4AA4A219B73B00024FAFB /* PresenterModel.swift */,
+				48E4AA4B219B73B00024FAFB /* PresenterModelInput.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		48E4AA56219B73C00024FAFB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				48E4AA46219B73B00024FAFB /* PresenterViewControllerInput.swift */,
+				48E4AA48219B73B00024FAFB /* PresenterViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		48E4AA57219B73CB0024FAFB /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				48E4AA47219B73B00024FAFB /* PresenterModuleInitializer.swift */,
+				48E4AA4C219B73B00024FAFB /* PresenterModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		48E4AA58219B73D50024FAFB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				48E4AA49219B73B00024FAFB /* PresenterView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		48E4AA59219B7A2D0024FAFB /* KeychainSingleton */ = {
+			isa = PBXGroup;
+			children = (
+				48E4AA5A219B7A5A0024FAFB /* KeychainSingleton.swift */,
+			);
+			path = KeychainSingleton;
 			sourceTree = "<group>";
 		};
 		970FEFF3BC3AD5412B9A26E5 /* Pods */ = {
@@ -443,14 +529,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				48E4AA36219B57CA0024FAFB /* AutorizationViewController.swift in Sources */,
+				48E4AA51219B73B00024FAFB /* PresenterView.swift in Sources */,
 				48E4AA34219B57CA0024FAFB /* AutorizationViewControllerInput.swift in Sources */,
-				48E4AA40219B580F0024FAFB /* OaythManager.swift in Sources */,
+				48E4AA40219B580F0024FAFB /* OauthManager.swift in Sources */,
 				48E4AA35219B57CA0024FAFB /* AutorizationModuleInitializer.swift in Sources */,
+				48E4AA53219B73B00024FAFB /* PresenterModelInput.swift in Sources */,
 				48E4AA37219B57CA0024FAFB /* AutorizationView.swift in Sources */,
+				48E4AA4E219B73B00024FAFB /* PresenterViewControllerInput.swift in Sources */,
+				48E4AA54219B73B00024FAFB /* PresenterModuleConfigurator.swift in Sources */,
+				48E4AA42219B6E820024FAFB /* APIClient.swift in Sources */,
 				48E4AA39219B57CA0024FAFB /* AutorizationModelInput.swift in Sources */,
+				48E4AA4D219B73B00024FAFB /* PresenterModelOutput.swift in Sources */,
+				48E4AA52219B73B00024FAFB /* PresenterModel.swift in Sources */,
 				48E4AA38219B57CA0024FAFB /* AutorizationModel.swift in Sources */,
-				48E4A9FF219B56C20024FAFB /* ViewController.swift in Sources */,
+				48E4AA5D219B7CA60024FAFB /* Repository.swift in Sources */,
+				48E4AA4F219B73B00024FAFB /* PresenterModuleInitializer.swift in Sources */,
 				48E4AA3A219B57CA0024FAFB /* AutorizationModuleConfigurator.swift in Sources */,
+				48E4AA50219B73B00024FAFB /* PresenterViewController.swift in Sources */,
+				48E4AA5B219B7A5A0024FAFB /* KeychainSingleton.swift in Sources */,
 				48E4A9FD219B56C20024FAFB /* AppDelegate.swift in Sources */,
 				48E4AA33219B57CA0024FAFB /* AutorizationModelOutput.swift in Sources */,
 			);

@@ -8,9 +8,18 @@
 
 import UIKit
 
-protocol AutorizationViewInput: class {}
+protocol AutorizationViewInput: class {
+    var action: (()->Void)? {get set}}
 
-final class AutorizationView: UIView {}
+final class AutorizationView: UIView {
+    
+    @IBAction func OnLoginTap(_ sender: Any) {
+        action?()
+    }
+    
+    var action: (()->Void)?
+    
+}
 
 // MARK: - AutorizationViewInput
 extension AutorizationView: AutorizationViewInput {}
