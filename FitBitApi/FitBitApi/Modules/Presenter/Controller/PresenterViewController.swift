@@ -17,8 +17,7 @@ final class PresenterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        contentView.stopIndicator()
-
+        contentView.startIndicator()
         model.load()
     }
 }
@@ -27,6 +26,7 @@ final class PresenterViewController: UIViewController {
 extension PresenterViewController: PresenterModelOutput {
     
     func modelDidSucces(_ data: Activity) {
+        contentView.stopIndicator()
         dataSource.items = data.categories
         DispatchQueue.main.async {
             self.contentView.prepare { (table) in
@@ -38,13 +38,11 @@ extension PresenterViewController: PresenterModelOutput {
         }
     }
     
-    func modelDidFail() {
-        print("AlertController")
+    func modelDidFail(_ error: Error?) {
+        UIAlertController.show(self, error: error)
     }
     
 }
 
 // MARK: - PresenterViewControllerInput
-extension PresenterViewController: PresenterViewControllerInput {
-
-}
+extension PresenterViewController: PresenterViewControllerInput {}

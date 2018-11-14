@@ -8,68 +8,27 @@
 
 import Foundation
 
-// TODO: - Move to the separated file UserData.swift
-struct Activity: Codable {
-    let categories: [Category]
-}
-
-struct Category: Codable {
-    let activities: [ActivityElement]
-    let id: Int
-    let name: String
-    let subCategories: [Category]?
-}
-
-struct ActivityElement: Codable {
-    let activityLevels: [ActivityLevel]?
-    let hasSpeed: Bool
-    let id: Int
-    let name: String
-    let mets: Double?
-}
-
-struct ActivityLevel: Codable {
-    let id: Int
-    let maxSpeedMPH, mets, minSpeedMPH: Double
-    let name: String
-}
-
-enum ActivityType: String {
-    case activities = "/activities"
-    case heartrate = "/heart"
-}
-enum FormatType: String {
-    case json = ".json"
-}
-
-struct FitBitUrlApi {
-    let prefixUrl = "https://api.fitbit.com/1"
-    var User: String
-    var activityType: String
-    var date: String
-    var formatType: String
-    
-    func getUrl() -> URL{
-        return URL(string: prefixUrl + User + activityType + date + formatType)!
-    }
-}
-
-
-
 final class Repository {
     
     private let apiClient: APIClient!
     private let holder: KeychainHolder!
+    private func buildUrl(date: String, activities: ActivityType) -> URL? {
+        guard let userId = holder.keychain["fitbit.userId"],
+            let fitBitUrl = URL(string: Constants.FitBitUrlApi2.prefixUrl + userId + activities.rawValue + date + Constants.FitBitUrlApi2.formatType)
+            else {return nil}
+        return fitBitUrl
+    }
     
     init(apiClient: APIClient, keychainHolder: KeychainHolder) {
         self.apiClient = apiClient
         self.holder = keychainHolder
     }
     
-    func getActivity(_ params: KeychainHolder, _ completion: @escaping ((Result<Activity>) -> Void)) {
+    func getActivity(_ date: String, _ completion: @escaping ((Result<Activity>) -> Void)) {
+       
+        guard let fitBitUrl = buildUrl(date: date, activities: ActivityType.activities) else {return}
         
-        let fitBitUrlApi = FitBitUrlApi(User: "/user/\(params["fitbit.userId"]!)", activityType: ActivityType.activities.rawValue, date: "/2018-11-11", formatType: FormatType.json.rawValue )
-        let resource = Resource(url: fitBitUrlApi.getUrl())
+        let resource = Resource(url: fitBitUrl)
         apiClient.load(resource) { (result) in
             switch result {
             case .success(let data):

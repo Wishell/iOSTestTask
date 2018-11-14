@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		24EE386A342A8D15B2940D0A /* Pods_FitBitApiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBAE8E6D6DBB9F8DAFACFB19 /* Pods_FitBitApiUITests.framework */; };
 		2A96269D8AA44F1F4C8C85D1 /* Pods_FitBitApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 055ED40F75E389E2736DCC1D /* Pods_FitBitApi.framework */; };
+		4819462B219C6B0D009F59B8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4819462A219C6B0C009F59B8 /* Constants.swift */; };
+		4819462D219C70B2009F59B8 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4819462C219C70B2009F59B8 /* UserData.swift */; };
+		4819462F219C7558009F59B8 /* Spinner.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4819462E219C7558009F59B8 /* Spinner.xib */; };
+		48194633219C87E0009F59B8 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48194632219C87E0009F59B8 /* Resource.swift */; };
+		48194635219C8809009F59B8 /* GenericResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48194634219C8808009F59B8 /* GenericResult.swift */; };
+		48194639219C88D3009F59B8 /* URLRequest+Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48194638219C88D3009F59B8 /* URLRequest+Resource.swift */; };
+		4819463B219C8A35009F59B8 /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4819463A219C8A35009F59B8 /* SpinnerView.swift */; };
+		4819463E219C959E009F59B8 /* UIAlertController+ErrorDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4819463D219C959E009F59B8 /* UIAlertController+ErrorDescription.swift */; };
 		48400ACA219BF99E0058A785 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48400AC9219BF99E0058A785 /* DataSource.swift */; };
 		48E4A9FD219B56C20024FAFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4A9FC219B56C20024FAFB /* AppDelegate.swift */; };
 		48E4AA02219B56C20024FAFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48E4AA00219B56C20024FAFB /* Main.storyboard */; };
@@ -68,6 +76,14 @@
 		055ED40F75E389E2736DCC1D /* Pods_FitBitApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitBitApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		179B8D86B7DD3653872CB5E6 /* Pods-FitBitApiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitBitApiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FitBitApiUITests/Pods-FitBitApiUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		43E1AAC63C6E0D51534D1A17 /* Pods-FitBitApi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitBitApi.release.xcconfig"; path = "Pods/Target Support Files/Pods-FitBitApi/Pods-FitBitApi.release.xcconfig"; sourceTree = "<group>"; };
+		4819462A219C6B0C009F59B8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4819462C219C70B2009F59B8 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		4819462E219C7558009F59B8 /* Spinner.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Spinner.xib; sourceTree = "<group>"; };
+		48194632219C87E0009F59B8 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		48194634219C8808009F59B8 /* GenericResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericResult.swift; sourceTree = "<group>"; };
+		48194638219C88D3009F59B8 /* URLRequest+Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Resource.swift"; sourceTree = "<group>"; };
+		4819463A219C8A35009F59B8 /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
+		4819463D219C959E009F59B8 /* UIAlertController+ErrorDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+ErrorDescription.swift"; sourceTree = "<group>"; };
 		48400AC9219BF99E0058A785 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		48E4A9F9219B56C20024FAFB /* FitBitApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitBitApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E4A9FC219B56C20024FAFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -155,6 +171,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4819463C219C9556009F59B8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4819463D219C959E009F59B8 /* UIAlertController+ErrorDescription.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		48E4A9F0219B56C20024FAFB = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +204,7 @@
 		48E4A9FB219B56C20024FAFB /* FitBitApi */ = {
 			isa = PBXGroup;
 			children = (
+				4819463C219C9556009F59B8 /* Extensions */,
 				48E4AA59219B7A2D0024FAFB /* KeychainHolder */,
 				48E4AA2A219B57BC0024FAFB /* Modules */,
 				48E4A9FC219B56C20024FAFB /* AppDelegate.swift */,
@@ -215,6 +240,11 @@
 				48E4AA5E219BEC9C0024FAFB /* Details */,
 				48E4AA44219B739C0024FAFB /* Presenter */,
 				48E4AA43219B73840024FAFB /* Autorization */,
+				4819462A219C6B0C009F59B8 /* Constants.swift */,
+				4819462C219C70B2009F59B8 /* UserData.swift */,
+				48194632219C87E0009F59B8 /* Resource.swift */,
+				48194634219C8808009F59B8 /* GenericResult.swift */,
+				48194638219C88D3009F59B8 /* URLRequest+Resource.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -313,6 +343,8 @@
 			isa = PBXGroup;
 			children = (
 				48E4AA49219B73B00024FAFB /* PresenterView.swift */,
+				4819462E219C7558009F59B8 /* Spinner.xib */,
+				4819463A219C8A35009F59B8 /* SpinnerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -496,6 +528,7 @@
 				48E4AA07219B56C30024FAFB /* LaunchScreen.storyboard in Resources */,
 				48E4AA04219B56C30024FAFB /* Assets.xcassets in Resources */,
 				48E4AA02219B56C20024FAFB /* Main.storyboard in Resources */,
+				4819462F219C7558009F59B8 /* Spinner.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,6 +630,7 @@
 			files = (
 				48E4AA36219B57CA0024FAFB /* AutorizationViewController.swift in Sources */,
 				48E4AA6C219BECCF0024FAFB /* DetailsModel.swift in Sources */,
+				4819462D219C70B2009F59B8 /* UserData.swift in Sources */,
 				48E4AA51219B73B00024FAFB /* PresenterView.swift in Sources */,
 				48E4AA34219B57CA0024FAFB /* AutorizationViewControllerInput.swift in Sources */,
 				48E4AA40219B580F0024FAFB /* OauthManager.swift in Sources */,
@@ -604,9 +638,11 @@
 				48E4AA53219B73B00024FAFB /* PresenterModelInput.swift in Sources */,
 				48E4AA37219B57CA0024FAFB /* AutorizationView.swift in Sources */,
 				48E4AA4E219B73B00024FAFB /* PresenterViewControllerInput.swift in Sources */,
+				4819462B219C6B0D009F59B8 /* Constants.swift in Sources */,
 				48E4AA54219B73B00024FAFB /* PresenterModuleConfigurator.swift in Sources */,
 				48E4AA69219BECCF0024FAFB /* DetailsModuleInitializer.swift in Sources */,
 				48E4AA42219B6E820024FAFB /* APIClient.swift in Sources */,
+				4819463E219C959E009F59B8 /* UIAlertController+ErrorDescription.swift in Sources */,
 				48E4AA39219B57CA0024FAFB /* AutorizationModelInput.swift in Sources */,
 				48E4AA4D219B73B00024FAFB /* PresenterModelOutput.swift in Sources */,
 				48E4AA52219B73B00024FAFB /* PresenterModel.swift in Sources */,
@@ -620,11 +656,15 @@
 				48E4AA6B219BECCF0024FAFB /* DetailsView.swift in Sources */,
 				48E4AA6D219BECCF0024FAFB /* DetailsModelInput.swift in Sources */,
 				48E4AA6A219BECCF0024FAFB /* DetailsViewController.swift in Sources */,
+				4819463B219C8A35009F59B8 /* SpinnerView.swift in Sources */,
 				48E4AA5B219B7A5A0024FAFB /* KeychainHolder.swift in Sources */,
 				48E4A9FD219B56C20024FAFB /* AppDelegate.swift in Sources */,
+				48194635219C8809009F59B8 /* GenericResult.swift in Sources */,
+				48194639219C88D3009F59B8 /* URLRequest+Resource.swift in Sources */,
 				48E4AA68219BECCF0024FAFB /* DetailsViewControllerInput.swift in Sources */,
 				48E4AA33219B57CA0024FAFB /* AutorizationModelOutput.swift in Sources */,
 				48E4AA67219BECCF0024FAFB /* DetailsModelOutput.swift in Sources */,
+				48194633219C87E0009F59B8 /* Resource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

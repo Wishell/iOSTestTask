@@ -17,12 +17,12 @@ final class PresenterModel: PresenterModelInput {
     let repository = Repository(apiClient: APIClient(KeychainHolder()), keychainHolder: KeychainHolder())
     
     func load(){
-        repository.getActivity(holder) { (result) in
+        repository.getActivity("/2018-11-11") { (result) in
             switch result {
             case .success(let items):
                 self.output.modelDidSucces(items)
             case .failure(let error):
-                self.output.modelDidFail()
+                self.output.modelDidFail(error)
             }
         }
     }

@@ -13,26 +13,18 @@ protocol PresenterViewInput: class {
     func prepare (_ registrate :((UITableView)->Void))
     var tableDataSource: (() -> DataSource)? { get set }
     var onTableItemTap: ((Category) -> Void)? { get set }
+    func startIndicator ()
     func stopIndicator ()
     
 }
 
 final class PresenterView: UIView {
     
+
+    @IBOutlet weak var spinnerView: SpinnerView!
     @IBOutlet weak var table: UITableView!
     var tableDataSource: (() -> DataSource)?
     var onTableItemTap: ((Category) -> Void)?
-    let spinner = UIActivityIndicatorView(style: .whiteLarge)
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        spinner.style = .whiteLarge
-        spinner.center = CGPoint(x: table.bounds.size.width/2, y: table.bounds.size.height/2)
-        spinner.hidesWhenStopped = true
-        spinner.startAnimating()
-        table.backgroundView = spinner
-        
-    }
 
 }
 
@@ -45,7 +37,15 @@ extension PresenterView: PresenterViewInput {
     
     func stopIndicator (){
         DispatchQueue.main.async {
-            self.spinner.stopAnimating()
+            self.spinnerView.activity.stopAnimating()
+            self.sendSubviewToBack(self.spinnerView)
+        }
+    }
+    
+    func startIndicator (){
+        DispatchQueue.main.async {
+            self.spinnerView.activity.startAnimating()
+            self.bringSubviewToFront(self.spinnerView)
         }
     }
     

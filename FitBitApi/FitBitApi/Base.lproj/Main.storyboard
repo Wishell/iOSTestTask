@@ -73,6 +73,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="see-dh-hOn" customClass="SpinnerView" customModule="FitBitApi" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="375" height="451"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8Q-WT-oeL">
                                 <rect key="frame" x="164" y="543" width="47" height="30"/>
                                 <state key="normal" title="Button"/>
@@ -93,16 +97,22 @@
                         <constraints>
                             <constraint firstItem="eo2-yQ-K65" firstAttribute="leading" secondItem="0lv-xA-xIa" secondAttribute="leading" id="2cQ-0W-o6h"/>
                             <constraint firstItem="r5G-EF-tIK" firstAttribute="top" secondItem="U8Q-WT-oeL" secondAttribute="bottom" constant="31" id="373-mR-zPA"/>
+                            <constraint firstItem="see-dh-hOn" firstAttribute="centerX" secondItem="eo2-yQ-K65" secondAttribute="centerX" id="5KA-4F-FAl"/>
                             <constraint firstItem="U8Q-WT-oeL" firstAttribute="leading" secondItem="r5G-EF-tIK" secondAttribute="leading" id="CEZ-hW-KO8"/>
                             <constraint firstItem="eo2-yQ-K65" firstAttribute="centerX" secondItem="U8Q-WT-oeL" secondAttribute="centerX" id="TRu-kx-a0l"/>
+                            <constraint firstItem="see-dh-hOn" firstAttribute="centerY" secondItem="eo2-yQ-K65" secondAttribute="centerY" id="a50-We-cIL"/>
                             <constraint firstItem="7xk-Ja-FAT" firstAttribute="top" secondItem="eo2-yQ-K65" secondAttribute="bottom" constant="-451" id="dBD-Km-wTI"/>
+                            <constraint firstItem="see-dh-hOn" firstAttribute="width" secondItem="eo2-yQ-K65" secondAttribute="width" id="hQi-og-CLf"/>
                             <constraint firstItem="eo2-yQ-K65" firstAttribute="centerX" secondItem="r5G-EF-tIK" secondAttribute="centerX" id="hVY-sq-Bzy"/>
                             <constraint firstItem="U8Q-WT-oeL" firstAttribute="top" secondItem="eo2-yQ-K65" secondAttribute="bottom" constant="28" id="ijn-0A-uE5"/>
                             <constraint firstItem="U8Q-WT-oeL" firstAttribute="leading" secondItem="7xk-Ja-FAT" secondAttribute="leading" constant="164" id="lJp-a1-bzI"/>
                             <constraint firstAttribute="trailing" secondItem="eo2-yQ-K65" secondAttribute="trailing" id="pSc-rj-7P2"/>
+                            <constraint firstItem="see-dh-hOn" firstAttribute="height" secondItem="eo2-yQ-K65" secondAttribute="height" id="reN-eG-n0g"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7xk-Ja-FAT"/>
                         <connections>
+                            <outlet property="SpinnerView" destination="see-dh-hOn" id="JxO-Jr-yUL"/>
+                            <outlet property="spinnerView" destination="see-dh-hOn" id="WJw-9a-ORT"/>
                             <outlet property="table" destination="eo2-yQ-K65" id="3eX-ME-AAQ"/>
                         </connections>
                     </view>
@@ -118,7 +128,7 @@
                     </connections>
                 </customObject>
             </objects>
-            <point key="canvasLocation" x="1015" y="134"/>
+            <point key="canvasLocation" x="1013.6" y="133.5832083958021"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="6Hh-DM-TeR">

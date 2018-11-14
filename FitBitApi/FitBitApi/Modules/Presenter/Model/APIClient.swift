@@ -8,32 +8,6 @@
 
 import Foundation
 
-// TODO: - Move to the separated file Resource.swift
-struct Resource {
-    let url: URL
-    let method: String = "GET"
-}
-
-// TODO: - Move to the separated file GenericResult.swift
-enum Result<T> {
-    case success(T)
-    case failure(Error)
-}
-
-enum APIClientError: Error {
-    case noData
-}
-
-// TODO: - Move to the separated file URLRequest+Resource.swift
-extension URLRequest {
-    
-    init(_ resource: Resource) {
-        self.init(url: resource.url)
-        self.httpMethod = resource.method
-    }
-    
-}
-
 final class APIClient {
     
     let keyHolder: KeychainHolder

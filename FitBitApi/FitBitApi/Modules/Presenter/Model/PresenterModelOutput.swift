@@ -8,5 +8,5 @@
 
 protocol PresenterModelOutput: class {
     func modelDidSucces(_ data: Activity)
-    func modelDidFail()
+    func modelDidFail(_ error: Error?)
 }
