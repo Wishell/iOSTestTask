@@ -7,18 +7,19 @@
 //
 
 import Foundation
-import KeychainAccess
+
 
 
 
 final class OauthManager {
     
-    private var urlResult:[String:String] = [:]
+    var model: AutorizationModelInput!
     
-    private let keychain: Keychain!
-
-    init() {
-        self.keychain = KeychainSingleton.shared.keychain
+    private var urlResult:[String:String] = [:]
+    private var keyHolder:KeychainHolder
+    
+    init (_ keyHolder: KeychainHolder) {
+        self.keyHolder = keyHolder
     }
     
     func handle (_ url: URL){
@@ -28,9 +29,8 @@ final class OauthManager {
             let arr = item.components(separatedBy: "=")
             urlResult[arr[0]] = arr[1]
         }
-    
-        
-        keychain["fitbit.userId"] = urlResult["user_id"]
-        keychain["fitbit.token"] = urlResult["token_type"]! + " " + urlResult["access_token"]!
+
+        keyHolder["fitbit.userId"] = urlResult["user_id"]
+        keyHolder["fitbit.token"] = urlResult["token_type"]! + " " + urlResult["access_token"]!
     }
 }

@@ -9,10 +9,12 @@
 import UIKit
 
 protocol PresenterViewInput: class {
+    
     func prepare (_ registrate :((UITableView)->Void))
     var tableDataSource: (() -> DataSource)? { get set }
     var onTableItemTap: ((Category) -> Void)? { get set }
     func stopIndicator ()
+    
 }
 
 final class PresenterView: UIView {
@@ -30,12 +32,14 @@ final class PresenterView: UIView {
         spinner.hidesWhenStopped = true
         spinner.startAnimating()
         table.backgroundView = spinner
+        
     }
 
 }
 
 // MARK: - PresenterViewInput
 extension PresenterView: PresenterViewInput {
+    
     func prepare (_ registrate :((UITableView)->Void)){
         registrate(self.table)
     }
@@ -45,12 +49,15 @@ extension PresenterView: PresenterViewInput {
             self.spinner.stopAnimating()
         }
     }
+    
 }
 
 extension PresenterView: UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let item = tableDataSource?().items[indexPath.row]
         item.flatMap { onTableItemTap?($0) }
     }
+    
 }

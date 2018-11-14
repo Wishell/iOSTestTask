@@ -8,5 +8,5 @@
 import KeychainAccess
 
 protocol AutorizationViewControllerInput: class {
-    func login()
+
 }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KeychainAccess
 
 final class PresenterViewController: UIViewController {
     
@@ -42,4 +43,6 @@ extension PresenterViewController: PresenterModelOutput {
 }
 
 // MARK: - PresenterViewControllerInput
-extension PresenterViewController: PresenterViewControllerInput {}
+extension PresenterViewController: PresenterViewControllerInput {
+
+}

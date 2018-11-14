@@ -34,7 +34,7 @@
 		48E4AA52219B73B00024FAFB /* PresenterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA4A219B73B00024FAFB /* PresenterModel.swift */; };
 		48E4AA53219B73B00024FAFB /* PresenterModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA4B219B73B00024FAFB /* PresenterModelInput.swift */; };
 		48E4AA54219B73B00024FAFB /* PresenterModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA4C219B73B00024FAFB /* PresenterModuleConfigurator.swift */; };
-		48E4AA5B219B7A5A0024FAFB /* KeychainSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA5A219B7A5A0024FAFB /* KeychainSingleton.swift */; };
+		48E4AA5B219B7A5A0024FAFB /* KeychainHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA5A219B7A5A0024FAFB /* KeychainHolder.swift */; };
 		48E4AA5D219B7CA60024FAFB /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA5C219B7CA60024FAFB /* Repository.swift */; };
 		48E4AA67219BECCF0024FAFB /* DetailsModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA5F219BECCF0024FAFB /* DetailsModelOutput.swift */; };
 		48E4AA68219BECCF0024FAFB /* DetailsViewControllerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA60219BECCF0024FAFB /* DetailsViewControllerInput.swift */; };
@@ -99,7 +99,7 @@
 		48E4AA4A219B73B00024FAFB /* PresenterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterModel.swift; sourceTree = "<group>"; };
 		48E4AA4B219B73B00024FAFB /* PresenterModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterModelInput.swift; sourceTree = "<group>"; };
 		48E4AA4C219B73B00024FAFB /* PresenterModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterModuleConfigurator.swift; sourceTree = "<group>"; };
-		48E4AA5A219B7A5A0024FAFB /* KeychainSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainSingleton.swift; sourceTree = "<group>"; };
+		48E4AA5A219B7A5A0024FAFB /* KeychainHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHolder.swift; sourceTree = "<group>"; };
 		48E4AA5C219B7CA60024FAFB /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		48E4AA5F219BECCF0024FAFB /* DetailsModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsModelOutput.swift; sourceTree = "<group>"; };
 		48E4AA60219BECCF0024FAFB /* DetailsViewControllerInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewControllerInput.swift; sourceTree = "<group>"; };
@@ -180,7 +180,7 @@
 		48E4A9FB219B56C20024FAFB /* FitBitApi */ = {
 			isa = PBXGroup;
 			children = (
-				48E4AA59219B7A2D0024FAFB /* KeychainSingleton */,
+				48E4AA59219B7A2D0024FAFB /* KeychainHolder */,
 				48E4AA2A219B57BC0024FAFB /* Modules */,
 				48E4A9FC219B56C20024FAFB /* AppDelegate.swift */,
 				48E4AA00219B56C20024FAFB /* Main.storyboard */,
@@ -317,12 +317,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		48E4AA59219B7A2D0024FAFB /* KeychainSingleton */ = {
+		48E4AA59219B7A2D0024FAFB /* KeychainHolder */ = {
 			isa = PBXGroup;
 			children = (
-				48E4AA5A219B7A5A0024FAFB /* KeychainSingleton.swift */,
+				48E4AA5A219B7A5A0024FAFB /* KeychainHolder.swift */,
 			);
-			path = KeychainSingleton;
+			path = KeychainHolder;
 			sourceTree = "<group>";
 		};
 		48E4AA5E219BEC9C0024FAFB /* Details */ = {
@@ -620,7 +620,7 @@
 				48E4AA6B219BECCF0024FAFB /* DetailsView.swift in Sources */,
 				48E4AA6D219BECCF0024FAFB /* DetailsModelInput.swift in Sources */,
 				48E4AA6A219BECCF0024FAFB /* DetailsViewController.swift in Sources */,
-				48E4AA5B219B7A5A0024FAFB /* KeychainSingleton.swift in Sources */,
+				48E4AA5B219B7A5A0024FAFB /* KeychainHolder.swift in Sources */,
 				48E4A9FD219B56C20024FAFB /* AppDelegate.swift in Sources */,
 				48E4AA68219BECCF0024FAFB /* DetailsViewControllerInput.swift in Sources */,
 				48E4AA33219B57CA0024FAFB /* AutorizationModelOutput.swift in Sources */,

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KeychainAccess
 
 final class AutorizationModuleConfigurator {
     
@@ -17,7 +18,10 @@ final class AutorizationModuleConfigurator {
     }
     
     private func configure(viewController: AutorizationViewController) {
+        let holder = KeychainHolder()
         let model = AutorizationModel()
+        
+        model.holder = holder
         model.output = viewController
         
         viewController.model = model

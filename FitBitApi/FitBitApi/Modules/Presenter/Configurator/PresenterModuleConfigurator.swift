@@ -17,8 +17,11 @@ final class PresenterModuleConfigurator {
     }
     
     private func configure(viewController: PresenterViewController) {
+        let holder = KeychainHolder()
         let model = PresenterModel()
+        
         model.output = viewController
+        model.holder = holder
         
         viewController.model = model
     }

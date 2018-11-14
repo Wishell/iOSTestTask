@@ -43,13 +43,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        let oauthManager = OauthManager()
+        let keyHolder = KeychainHolder()
+        let oauthManager = OauthManager(keyHolder)
         oauthManager.handle(url) // TODO error handling
-
-        let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let vc: PresenterViewController = storyboard.instantiateViewController(withIdentifier: "PresenterViewController") as! PresenterViewController
-        self.window?.rootViewController = vc
+        NotificationCenter.default.post(name: .successLogin, object: nil)
 
         return true
     }

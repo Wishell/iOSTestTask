@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import KeychainAccess
 
 
 // TODO: - Move to the separated file UserData.swift
@@ -51,11 +52,7 @@ enum FormatType: String {
 
 struct FitBitUrlApi {
     let prefixUrl = "https://api.fitbit.com/1"
-    var User: String {
-        get {
-            return "/user/\(KeychainSingleton.shared.keychain["fitbit.userId"]!)"
-        }
-    }
+    var User: String
     var activityType: String
     var date: String
     var formatType: String
@@ -70,14 +67,16 @@ struct FitBitUrlApi {
 final class Repository {
     
     private let apiClient: APIClient!
+    private let holder: KeychainHolder!
     
-    init(apiClient: APIClient) {
+    init(apiClient: APIClient, keychainHolder: KeychainHolder) {
         self.apiClient = apiClient
+        self.holder = keychainHolder
     }
     
-    func getActivity(_ completion: @escaping ((Result<Activity>) -> Void)) {
+    func getActivity(_ params: KeychainHolder, _ completion: @escaping ((Result<Activity>) -> Void)) {
         
-        let fitBitUrlApi = FitBitUrlApi(activityType: ActivityType.activities.rawValue, date: "/2018-11-11", formatType: FormatType.json.rawValue)
+        let fitBitUrlApi = FitBitUrlApi(User: "/user/\(params["fitbit.userId"]!)", activityType: ActivityType.activities.rawValue, date: "/2018-11-11", formatType: FormatType.json.rawValue )
         let resource = Resource(url: fitBitUrlApi.getUrl())
         //let resource = Resource(url: URL(string: "https://api.fitbit.com/1/user/-/activities/heart/date/today/1d.json")!)
         apiClient.load(resource) { (result) in

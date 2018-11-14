@@ -7,14 +7,17 @@
 //
 
 import Foundation
+import KeychainAccess
 
 final class PresenterModel: PresenterModelInput {
     
     weak var output: PresenterModelOutput!
-    let repository = Repository(apiClient: APIClient())
+    var holder: KeychainHolder!
+    
+    let repository = Repository(apiClient: APIClient(KeychainHolder()), keychainHolder: KeychainHolder())
     
     func load(){
-        repository.getActivity{ (result) in
+        repository.getActivity(holder) { (result) in
             switch result {
             case .success(let items):
                 self.output.modelDidSucces(items)
@@ -23,4 +26,6 @@ final class PresenterModel: PresenterModelInput {
             }
         }
     }
+    
 }
+
