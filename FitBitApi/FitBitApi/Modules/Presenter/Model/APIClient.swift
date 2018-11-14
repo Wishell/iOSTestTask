@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import KeychainAccess
 
 // TODO: - Move to the separated file Resource.swift
 struct Resource {

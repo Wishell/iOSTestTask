@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import KeychainAccess
 
 final class AutorizationModuleConfigurator {
     

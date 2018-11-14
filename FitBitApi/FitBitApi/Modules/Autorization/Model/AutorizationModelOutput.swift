@@ -6,5 +6,4 @@
 //  Copyright © 2018 Wishell. All rights reserved.
 //
 
-protocol AutorizationModelOutput: class {
-}
+protocol AutorizationModelOutput: class {}

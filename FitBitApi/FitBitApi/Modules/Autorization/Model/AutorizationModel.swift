@@ -11,7 +11,7 @@ import Foundation
 final class AutorizationModel: AutorizationModelInput {
 
     weak var output: AutorizationModelOutput!
-    weak var holder: KeychainHolder!
+    var holder: KeychainHolder!
 
 }
 

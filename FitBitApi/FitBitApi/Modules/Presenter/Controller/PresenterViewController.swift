@@ -19,12 +19,13 @@ final class PresenterViewController: UIViewController {
         super.viewDidLoad()
         contentView.stopIndicator()
 
-        self.model.load()
+        model.load()
     }
 }
 
 // MARK: - PresenterModelOutput
 extension PresenterViewController: PresenterModelOutput {
+    
     func modelDidSucces(_ data: Activity) {
         dataSource.items = data.categories
         DispatchQueue.main.async {
@@ -40,6 +41,7 @@ extension PresenterViewController: PresenterModelOutput {
     func modelDidFail() {
         print("AlertController")
     }
+    
 }
 
 // MARK: - PresenterViewControllerInput

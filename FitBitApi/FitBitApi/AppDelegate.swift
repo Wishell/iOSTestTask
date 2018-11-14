@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import KeychainAccess
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

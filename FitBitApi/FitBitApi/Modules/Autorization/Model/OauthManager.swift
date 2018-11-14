@@ -8,14 +8,8 @@
 
 import Foundation
 
-
-
-
 final class OauthManager {
     
-    var model: AutorizationModelInput!
-    
-    private var urlResult:[String:String] = [:]
     private var keyHolder:KeychainHolder
     
     init (_ keyHolder: KeychainHolder) {
@@ -24,7 +18,8 @@ final class OauthManager {
     
     func handle (_ url: URL){
         let component = URLComponents(url: url, resolvingAgainstBaseURL: true)
-        
+        var urlResult:[String:String] = [:]
+
         for item in (component?.fragment?.components(separatedBy: "&"))!{
             let arr = item.components(separatedBy: "=")
             urlResult[arr[0]] = arr[1]
@@ -33,4 +28,5 @@ final class OauthManager {
         keyHolder["fitbit.userId"] = urlResult["user_id"]
         keyHolder["fitbit.token"] = urlResult["token_type"]! + " " + urlResult["access_token"]!
     }
+    
 }

@@ -13,6 +13,7 @@ final class DataSource: NSObject {
 }
 
 extension DataSource: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
@@ -24,4 +25,5 @@ extension DataSource: UITableViewDataSource {
         cell.textLabel?.text = item.name
         return cell
     }
+    
 }

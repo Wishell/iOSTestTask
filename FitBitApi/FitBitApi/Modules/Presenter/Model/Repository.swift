@@ -7,8 +7,6 @@
 //
 
 import Foundation
-import KeychainAccess
-
 
 // TODO: - Move to the separated file UserData.swift
 struct Activity: Codable {
@@ -23,7 +21,6 @@ struct Category: Codable {
 }
 
 struct ActivityElement: Codable {
-    //let accessLevel: AccessLevel
     let activityLevels: [ActivityLevel]?
     let hasSpeed: Bool
     let id: Int
@@ -31,17 +28,12 @@ struct ActivityElement: Codable {
     let mets: Double?
 }
 
-//enum AccessLevel: String, Codable {
-//    case accessLevelPUBLIC = "PUBLIC"
-//}
-
 struct ActivityLevel: Codable {
     let id: Int
     let maxSpeedMPH, mets, minSpeedMPH: Double
     let name: String
 }
 
-///////////////////////
 enum ActivityType: String {
     case activities = "/activities"
     case heartrate = "/heart"
@@ -78,7 +70,6 @@ final class Repository {
         
         let fitBitUrlApi = FitBitUrlApi(User: "/user/\(params["fitbit.userId"]!)", activityType: ActivityType.activities.rawValue, date: "/2018-11-11", formatType: FormatType.json.rawValue )
         let resource = Resource(url: fitBitUrlApi.getUrl())
-        //let resource = Resource(url: URL(string: "https://api.fitbit.com/1/user/-/activities/heart/date/today/1d.json")!)
         apiClient.load(resource) { (result) in
             switch result {
             case .success(let data):

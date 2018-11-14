@@ -7,8 +7,8 @@ target 'FitBitApi' do
 
   # Pods for FitBitApi
   
-	use_frameworks!
-	pod 'KeychainAccess'
+  use_frameworks!
+  pod 'KeychainAccess'
     
   target 'FitBitApiTests' do
     inherit! :search_paths

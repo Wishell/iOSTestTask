@@ -27,7 +27,6 @@ final class PresenterView: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
         spinner.style = .whiteLarge
-       // spinner.color = UIColor(ciColor: .blue)
         spinner.center = CGPoint(x: table.bounds.size.width/2, y: table.bounds.size.height/2)
         spinner.hidesWhenStopped = true
         spinner.startAnimating()

@@ -11,15 +11,10 @@ import KeychainAccess
 
 final class KeychainHolder {
     
-    let keychain: Keychain
-    
-    init(){
-        self.keychain = Keychain(service: "com.Vishneuski.fitbit")
-    }
+    let keychain: Keychain = Keychain(service: "com.Vishneuski.fitbit") 
     
     subscript (key: String) -> String? {
         get {
-            
             return keychain[key]
         }
         set {
