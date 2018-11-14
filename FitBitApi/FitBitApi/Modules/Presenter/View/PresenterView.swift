@@ -12,7 +12,6 @@ protocol PresenterViewInput: class {
     
     func prepare (_ registrate :((UITableView)->Void))
     var tableDataSource: (() -> DataSource)? { get set }
-    var onTableItemTap: ((Category) -> Void)? { get set }
     func startIndicator ()
     func stopIndicator ()
     
@@ -20,10 +19,8 @@ protocol PresenterViewInput: class {
 
 final class PresenterView: UIView {
     
-
     @IBOutlet weak var spinnerView: SpinnerView!
     @IBOutlet weak var table: UITableView!
-    var tableDataSource: (() -> DataSource)?
     var onTableItemTap: ((Category) -> Void)?
 
 }
@@ -51,6 +48,7 @@ extension PresenterView: PresenterViewInput {
     
 }
 
+// MARK: - UITableViewDelegate
 extension PresenterView: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

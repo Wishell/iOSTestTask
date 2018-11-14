@@ -8,5 +8,7 @@
 import KeychainAccess
 
 protocol PresenterModelInput {
+    
     func load()
+    
 }

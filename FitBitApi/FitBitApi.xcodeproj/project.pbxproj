@@ -175,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				4819463D219C959E009F59B8 /* UIAlertController+ErrorDescription.swift */,
+				48194638219C88D3009F59B8 /* URLRequest+Resource.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -244,7 +245,6 @@
 				4819462C219C70B2009F59B8 /* UserData.swift */,
 				48194632219C87E0009F59B8 /* Resource.swift */,
 				48194634219C8808009F59B8 /* GenericResult.swift */,
-				48194638219C88D3009F59B8 /* URLRequest+Resource.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";

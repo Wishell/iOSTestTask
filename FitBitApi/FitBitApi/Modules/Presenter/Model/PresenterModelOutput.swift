@@ -7,6 +7,8 @@
 //
 
 protocol PresenterModelOutput: class {
+    
     func modelDidSucces(_ data: Activity)
     func modelDidFail(_ error: Error?)
+    
 }

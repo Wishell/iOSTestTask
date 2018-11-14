@@ -7,6 +7,4 @@
 //
 import KeychainAccess
 
-protocol PresenterViewControllerInput: class {
-
-}
+protocol PresenterViewControllerInput: class {}

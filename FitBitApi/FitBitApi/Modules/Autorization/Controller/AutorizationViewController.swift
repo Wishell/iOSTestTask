@@ -42,6 +42,7 @@ extension AutorizationViewController: AutorizationModelOutput {}
 // MARK: - AutorizationViewControllerInput
 extension AutorizationViewController: AutorizationViewControllerInput {}
 
+// MARK: - Notification.Name
 extension Notification.Name {
     
     static let successLogin = Notification.Name("successLogin")
