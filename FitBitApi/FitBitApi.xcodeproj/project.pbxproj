@@ -17,6 +17,14 @@
 		48194639219C88D3009F59B8 /* URLRequest+Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48194638219C88D3009F59B8 /* URLRequest+Resource.swift */; };
 		4819463B219C8A35009F59B8 /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4819463A219C8A35009F59B8 /* SpinnerView.swift */; };
 		4819463E219C959E009F59B8 /* UIAlertController+ErrorDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4819463D219C959E009F59B8 /* UIAlertController+ErrorDescription.swift */; };
+		48194648219CAEB4009F59B8 /* ActivityModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48194640219CAEB4009F59B8 /* ActivityModelOutput.swift */; };
+		48194649219CAEB4009F59B8 /* ActivityViewControllerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48194641219CAEB4009F59B8 /* ActivityViewControllerInput.swift */; };
+		4819464A219CAEB4009F59B8 /* ActivityModuleInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48194642219CAEB4009F59B8 /* ActivityModuleInitializer.swift */; };
+		4819464B219CAEB4009F59B8 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48194643219CAEB4009F59B8 /* ActivityViewController.swift */; };
+		4819464C219CAEB4009F59B8 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48194644219CAEB4009F59B8 /* ActivityView.swift */; };
+		4819464D219CAEB4009F59B8 /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48194645219CAEB4009F59B8 /* ActivityModel.swift */; };
+		4819464E219CAEB4009F59B8 /* ActivityModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48194646219CAEB4009F59B8 /* ActivityModelInput.swift */; };
+		4819464F219CAEB4009F59B8 /* ActivityModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48194647219CAEB4009F59B8 /* ActivityModuleConfigurator.swift */; };
 		48400ACA219BF99E0058A785 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48400AC9219BF99E0058A785 /* DataSource.swift */; };
 		48E4A9FD219B56C20024FAFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4A9FC219B56C20024FAFB /* AppDelegate.swift */; };
 		48E4AA02219B56C20024FAFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48E4AA00219B56C20024FAFB /* Main.storyboard */; };
@@ -84,6 +92,14 @@
 		48194638219C88D3009F59B8 /* URLRequest+Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Resource.swift"; sourceTree = "<group>"; };
 		4819463A219C8A35009F59B8 /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
 		4819463D219C959E009F59B8 /* UIAlertController+ErrorDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+ErrorDescription.swift"; sourceTree = "<group>"; };
+		48194640219CAEB4009F59B8 /* ActivityModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModelOutput.swift; sourceTree = "<group>"; };
+		48194641219CAEB4009F59B8 /* ActivityViewControllerInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewControllerInput.swift; sourceTree = "<group>"; };
+		48194642219CAEB4009F59B8 /* ActivityModuleInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModuleInitializer.swift; sourceTree = "<group>"; };
+		48194643219CAEB4009F59B8 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		48194644219CAEB4009F59B8 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		48194645219CAEB4009F59B8 /* ActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
+		48194646219CAEB4009F59B8 /* ActivityModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModelInput.swift; sourceTree = "<group>"; };
+		48194647219CAEB4009F59B8 /* ActivityModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModuleConfigurator.swift; sourceTree = "<group>"; };
 		48400AC9219BF99E0058A785 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		48E4A9F9219B56C20024FAFB /* FitBitApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitBitApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E4A9FC219B56C20024FAFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -180,6 +196,53 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		4819463F219CAE8F009F59B8 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				48194650219CAEBB009F59B8 /* Model */,
+				48194653219CAEDB009F59B8 /* View */,
+				48194651219CAEC5009F59B8 /* Controller */,
+				48194652219CAED3009F59B8 /* Configurator */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		48194650219CAEBB009F59B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				48194640219CAEB4009F59B8 /* ActivityModelOutput.swift */,
+				48194645219CAEB4009F59B8 /* ActivityModel.swift */,
+				48194646219CAEB4009F59B8 /* ActivityModelInput.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		48194651219CAEC5009F59B8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				48194641219CAEB4009F59B8 /* ActivityViewControllerInput.swift */,
+				48194643219CAEB4009F59B8 /* ActivityViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		48194652219CAED3009F59B8 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				48194642219CAEB4009F59B8 /* ActivityModuleInitializer.swift */,
+				48194647219CAEB4009F59B8 /* ActivityModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		48194653219CAEDB009F59B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				48194644219CAEB4009F59B8 /* ActivityView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		48E4A9F0219B56C20024FAFB = {
 			isa = PBXGroup;
 			children = (
@@ -239,7 +302,8 @@
 			isa = PBXGroup;
 			children = (
 				48E4AA5E219BEC9C0024FAFB /* Details */,
-				48E4AA44219B739C0024FAFB /* Presenter */,
+				4819463F219CAE8F009F59B8 /* Activity */,
+				48E4AA44219B739C0024FAFB /* Cathegory */,
 				48E4AA43219B73840024FAFB /* Autorization */,
 				4819462A219C6B0C009F59B8 /* Constants.swift */,
 				4819462C219C70B2009F59B8 /* UserData.swift */,
@@ -297,20 +361,20 @@
 			path = Autorization;
 			sourceTree = "<group>";
 		};
-		48E4AA44219B739C0024FAFB /* Presenter */ = {
+		48E4AA44219B739C0024FAFB /* Cathegory */ = {
 			isa = PBXGroup;
 			children = (
 				48E4AA55219B73B90024FAFB /* Model */,
 				48E4AA56219B73C00024FAFB /* Controller */,
 				48E4AA57219B73CB0024FAFB /* Configurator */,
-				48E4AA58219B73D50024FAFB /* View */,
 			);
-			path = Presenter;
+			path = Cathegory;
 			sourceTree = "<group>";
 		};
 		48E4AA55219B73B90024FAFB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				48E4AA58219B73D50024FAFB /* View */,
 				48E4AA45219B73B00024FAFB /* PresenterModelOutput.swift */,
 				48E4AA4A219B73B00024FAFB /* PresenterModel.swift */,
 				48E4AA4B219B73B00024FAFB /* PresenterModelInput.swift */,
@@ -629,19 +693,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				48E4AA36219B57CA0024FAFB /* AutorizationViewController.swift in Sources */,
+				4819464D219CAEB4009F59B8 /* ActivityModel.swift in Sources */,
+				4819464A219CAEB4009F59B8 /* ActivityModuleInitializer.swift in Sources */,
 				48E4AA6C219BECCF0024FAFB /* DetailsModel.swift in Sources */,
 				4819462D219C70B2009F59B8 /* UserData.swift in Sources */,
 				48E4AA51219B73B00024FAFB /* PresenterView.swift in Sources */,
+				48194649219CAEB4009F59B8 /* ActivityViewControllerInput.swift in Sources */,
 				48E4AA34219B57CA0024FAFB /* AutorizationViewControllerInput.swift in Sources */,
 				48E4AA40219B580F0024FAFB /* OauthManager.swift in Sources */,
 				48E4AA35219B57CA0024FAFB /* AutorizationModuleInitializer.swift in Sources */,
 				48E4AA53219B73B00024FAFB /* PresenterModelInput.swift in Sources */,
 				48E4AA37219B57CA0024FAFB /* AutorizationView.swift in Sources */,
+				4819464C219CAEB4009F59B8 /* ActivityView.swift in Sources */,
 				48E4AA4E219B73B00024FAFB /* PresenterViewControllerInput.swift in Sources */,
 				4819462B219C6B0D009F59B8 /* Constants.swift in Sources */,
 				48E4AA54219B73B00024FAFB /* PresenterModuleConfigurator.swift in Sources */,
 				48E4AA69219BECCF0024FAFB /* DetailsModuleInitializer.swift in Sources */,
+				4819464E219CAEB4009F59B8 /* ActivityModelInput.swift in Sources */,
+				4819464B219CAEB4009F59B8 /* ActivityViewController.swift in Sources */,
 				48E4AA42219B6E820024FAFB /* APIClient.swift in Sources */,
+				4819464F219CAEB4009F59B8 /* ActivityModuleConfigurator.swift in Sources */,
 				4819463E219C959E009F59B8 /* UIAlertController+ErrorDescription.swift in Sources */,
 				48E4AA39219B57CA0024FAFB /* AutorizationModelInput.swift in Sources */,
 				48E4AA4D219B73B00024FAFB /* PresenterModelOutput.swift in Sources */,
@@ -665,6 +736,7 @@
 				48E4AA33219B57CA0024FAFB /* AutorizationModelOutput.swift in Sources */,
 				48E4AA67219BECCF0024FAFB /* DetailsModelOutput.swift in Sources */,
 				48194633219C87E0009F59B8 /* Resource.swift in Sources */,
+				48194648219CAEB4009F59B8 /* ActivityModelOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
