@@ -1,4 +1,4 @@
-//  
+//
 //  AutorizationModuleConfigurator.swift
 //  FitBitApi
 //
@@ -9,21 +9,21 @@
 import UIKit
 
 final class AutorizationModuleConfigurator {
-    
+
     func configureModuleForViewInput<UIViewController>(viewInput: UIViewController) {
         if let viewController = viewInput as? AutorizationViewController {
             configure(viewController: viewController)
         }
     }
-    
+
     private func configure(viewController: AutorizationViewController) {
         let holder = KeychainHolder()
         let model = AutorizationModel()
-        
+
         model.holder = holder
         model.output = viewController
-        
+
         viewController.model = model
     }
-    
+
 }

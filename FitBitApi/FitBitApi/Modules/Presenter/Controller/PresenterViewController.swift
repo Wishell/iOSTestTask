@@ -1,4 +1,4 @@
-//  
+//
 //  PresenterViewController.swift
 //  FitBitApi
 //
@@ -10,11 +10,11 @@ import UIKit
 import KeychainAccess
 
 final class PresenterViewController: UIViewController {
-    
+
     var model: PresenterModelInput!
     lazy var contentView: PresenterViewInput = { return view as! PresenterViewInput }()
     let dataSource = DataSource()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         contentView.startIndicator()
@@ -24,7 +24,7 @@ final class PresenterViewController: UIViewController {
 
 // MARK: - PresenterModelOutput
 extension PresenterViewController: PresenterModelOutput {
-    
+
     func modelDidSucces(_ data: Activity) {
         contentView.stopIndicator()
         dataSource.items = data.categories
@@ -37,12 +37,12 @@ extension PresenterViewController: PresenterModelOutput {
             }
         }
     }
-    
+
     func modelDidFail(_ error: Error?) {
         UIAlertController.show(self, error: error)
     }
-    
+
 }
 
 // MARK: - PresenterViewControllerInput
-extension PresenterViewController: PresenterViewControllerInput {}
+extension PresenterViewController: PresenterViewControllerInput { }

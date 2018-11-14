@@ -1,4 +1,4 @@
-//  
+//
 //  PresenterModel.swift
 //  FitBitApi
 //
@@ -10,13 +10,13 @@ import Foundation
 import KeychainAccess
 
 final class PresenterModel: PresenterModelInput {
-    
+
     weak var output: PresenterModelOutput!
     var holder: KeychainHolder!
-    
+
     let repository = Repository(apiClient: APIClient(KeychainHolder()), keychainHolder: KeychainHolder())
-    
-    func load(){
+
+    func load() {
         repository.getActivity("/2018-11-11") { (result) in
             switch result {
             case .success(let items):
@@ -26,6 +26,6 @@ final class PresenterModel: PresenterModelInput {
             }
         }
     }
-    
+
 }
 

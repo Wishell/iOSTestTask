@@ -1,4 +1,4 @@
-//  
+//
 //  PresenterModuleConfigurator.swift
 //  FitBitApi
 //
@@ -9,21 +9,21 @@
 import UIKit
 
 final class PresenterModuleConfigurator {
-    
+
     func configureModuleForViewInput<UIViewController>(viewInput: UIViewController) {
         if let viewController = viewInput as? PresenterViewController {
             configure(viewController: viewController)
         }
     }
-    
+
     private func configure(viewController: PresenterViewController) {
         let holder = KeychainHolder()
         let model = PresenterModel()
-        
+
         model.output = viewController
         model.holder = holder
-        
+
         viewController.model = model
     }
-    
+
 }

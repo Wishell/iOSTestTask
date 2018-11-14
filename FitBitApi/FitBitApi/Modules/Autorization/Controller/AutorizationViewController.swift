@@ -19,7 +19,7 @@ final class AutorizationViewController: UIViewController {
         super.viewDidLoad()
         
         contentView.action = { [unowned self] in
-            guard let url = URL(string: Constants.authorizationUrl) else {return}
+            guard let url = URL(string: Constants.FitBitUrlApi2.authorizationUrl) else {return}
             let vc = SFSafariViewController(url: url)
             self.present(vc, animated: true, completion: nil)
             self.safarivc = vc

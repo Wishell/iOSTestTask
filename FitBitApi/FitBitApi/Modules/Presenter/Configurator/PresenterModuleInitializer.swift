@@ -1,4 +1,4 @@
-//  
+//
 //  PresenterModuleInitializer.swift
 //  FitBitApi
 //
@@ -9,12 +9,12 @@
 import UIKit
 
 final class PresenterModuleInitializer: NSObject {
-    
+
     @IBOutlet weak var viewController: PresenterViewController!
-    
+
     override func awakeFromNib() {
         let configurator = PresenterModuleConfigurator()
         configurator.configureModuleForViewInput(viewInput: viewController)
     }
-    
+
 }

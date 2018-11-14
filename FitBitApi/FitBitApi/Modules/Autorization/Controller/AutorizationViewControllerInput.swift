@@ -1,4 +1,4 @@
-//  
+//
 //  AutorizationViewControllerInput.swift
 //  FitBitApi
 //
@@ -6,4 +6,4 @@
 //  Copyright © 2018 Wishell. All rights reserved.
 //
 
-protocol AutorizationViewControllerInput: class {}
+protocol AutorizationViewControllerInput: class { }

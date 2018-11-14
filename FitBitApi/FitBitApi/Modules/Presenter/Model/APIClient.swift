@@ -9,13 +9,13 @@
 import Foundation
 
 final class APIClient {
-    
+
     let keyHolder: KeychainHolder
-    
-    init (_ keyHolder: KeychainHolder){
+
+    init (_ keyHolder: KeychainHolder) {
         self.keyHolder = keyHolder
     }
-    
+
     func load(_ resource: Resource, result: @escaping ((Result<Data>) -> Void)) {
         var request = URLRequest(resource)
         request.allHTTPHeaderFields?["Authorization"] = keyHolder["fitbit.token"]
@@ -32,5 +32,5 @@ final class APIClient {
         }
         task.resume()
     }
-    
+
 }

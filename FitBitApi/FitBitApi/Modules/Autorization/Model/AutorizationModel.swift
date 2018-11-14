@@ -1,4 +1,4 @@
-//  
+//
 //  AutorizationModel.swift
 //  FitBitApi
 //

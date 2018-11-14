@@ -1,4 +1,4 @@
-//  
+//
 //  PresenterView.swift
 //  FitBitApi
 //
@@ -9,54 +9,54 @@
 import UIKit
 
 protocol PresenterViewInput: class {
-    
-    func prepare (_ registrate :((UITableView)->Void))
+
+    func prepare (_ registrate: ((UITableView) -> Void))
     var tableDataSource: (() -> DataSource)? { get set }
     var onTableItemTap: ((Category) -> Void)? { get set }
     func startIndicator ()
     func stopIndicator ()
-    
+
 }
 
 final class PresenterView: UIView {
-    
+
     @IBOutlet weak var spinnerView: SpinnerView!
     @IBOutlet weak var table: UITableView!
     var onTableItemTap: ((Category) -> Void)?
     var tableDataSource: (() -> DataSource)?
-    
+
 }
 
 // MARK: - PresenterViewInput
 extension PresenterView: PresenterViewInput {
-    
-    func prepare (_ registrate :((UITableView)->Void)){
+
+    func prepare (_ registrate: ((UITableView) -> Void)) {
         registrate(self.table)
     }
-    
-    func stopIndicator (){
+
+    func stopIndicator () {
         DispatchQueue.main.async {
             self.spinnerView.activity.stopAnimating()
             self.sendSubviewToBack(self.spinnerView)
         }
     }
-    
-    func startIndicator (){
+
+    func startIndicator () {
         DispatchQueue.main.async {
             self.spinnerView.activity.startAnimating()
             self.bringSubviewToFront(self.spinnerView)
         }
     }
-    
+
 }
 
 // MARK: - UITableViewDelegate
 extension PresenterView: UITableViewDelegate {
-    
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let item = tableDataSource?().items[indexPath.row]
         item.flatMap { onTableItemTap?($0) }
     }
-    
+
 }

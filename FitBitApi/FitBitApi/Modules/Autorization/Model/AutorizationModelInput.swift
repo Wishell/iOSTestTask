@@ -1,4 +1,4 @@
-//  
+//
 //  AutorizationModelInput.swift
 //  FitBitApi
 //
@@ -7,4 +7,4 @@
 //
 import KeychainAccess
 
-protocol AutorizationModelInput {}
+protocol AutorizationModelInput { }

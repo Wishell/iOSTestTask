@@ -1,4 +1,4 @@
-//  
+//
 //  AutorizationModuleInitializer.swift
 //  FitBitApi
 //
@@ -9,12 +9,12 @@
 import UIKit
 
 final class AutorizationModuleInitializer: NSObject {
-    
+
     @IBOutlet weak var viewController: AutorizationViewController!
-    
+
     override func awakeFromNib() {
         let configurator = AutorizationModuleConfigurator()
         configurator.configureModuleForViewInput(viewInput: viewController)
     }
-    
+
 }

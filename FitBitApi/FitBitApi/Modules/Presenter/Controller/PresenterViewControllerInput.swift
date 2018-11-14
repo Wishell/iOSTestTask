@@ -1,4 +1,4 @@
-//  
+//
 //  PresenterViewControllerInput.swift
 //  FitBitApi
 //
@@ -7,4 +7,4 @@
 //
 import KeychainAccess
 
-protocol PresenterViewControllerInput: class {}
+protocol PresenterViewControllerInput: class { }

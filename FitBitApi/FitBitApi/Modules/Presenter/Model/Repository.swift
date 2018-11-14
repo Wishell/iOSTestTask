@@ -9,25 +9,25 @@
 import Foundation
 
 final class Repository {
-    
+
     private let apiClient: APIClient!
     private let holder: KeychainHolder!
     private func buildUrl(date: String, activities: ActivityType) -> URL? {
         guard let userId = holder.keychain["fitbit.userId"],
             let fitBitUrl = URL(string: Constants.FitBitUrlApi2.prefixUrl + userId + activities.rawValue + date + Constants.FitBitUrlApi2.formatType)
-            else {return nil}
+            else { return nil }
         return fitBitUrl
     }
-    
+
     init(apiClient: APIClient, keychainHolder: KeychainHolder) {
         self.apiClient = apiClient
         self.holder = keychainHolder
     }
-    
+
     func getActivity(_ date: String, _ completion: @escaping ((Result<Activity>) -> Void)) {
-       
-        guard let fitBitUrl = buildUrl(date: date, activities: ActivityType.activities) else {return}
-        
+
+        guard let fitBitUrl = buildUrl(date: date, activities: ActivityType.activities) else { return }
+
         let resource = Resource(url: fitBitUrl)
         apiClient.load(resource) { (result) in
             switch result {
@@ -43,5 +43,5 @@ final class Repository {
             }
         }
     }
-    
+
 }

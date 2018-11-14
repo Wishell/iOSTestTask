@@ -1,4 +1,4 @@
-//  
+//
 //  PresenterModelInput.swift
 //  FitBitApi
 //
@@ -8,7 +8,7 @@
 import KeychainAccess
 
 protocol PresenterModelInput {
-    
+
     func load()
-    
+
 }

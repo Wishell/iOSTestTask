@@ -13,11 +13,11 @@ final class DataSource: NSObject {
 }
 
 extension DataSource: UITableViewDataSource {
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let identifier = "\(UITableViewCell.self)"
         let item = items[indexPath.row]
@@ -25,5 +25,5 @@ extension DataSource: UITableViewDataSource {
         cell.textLabel?.text = item.name
         return cell
     }
-    
+
 }

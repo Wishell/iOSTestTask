@@ -1,4 +1,4 @@
-//  
+//
 //  AutorizationView.swift
 //  FitBitApi
 //
@@ -9,17 +9,17 @@
 import UIKit
 
 protocol AutorizationViewInput: class {
-    var action: (()->Void)? {get set}}
+    var action: (() -> Void)? { get set } }
 
 final class AutorizationView: UIView {
-    
+
     @IBAction func OnLoginTap(_ sender: Any) {
         action?()
     }
-    
-    var action: (()->Void)?
-    
+
+    var action: (() -> Void)?
+
 }
 
 // MARK: - AutorizationViewInput
-extension AutorizationView: AutorizationViewInput {}
+extension AutorizationView: AutorizationViewInput { }
