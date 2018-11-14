@@ -303,7 +303,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "42"
             endingLineNumber = "42"
-            landmarkName = "stopIndicator()"
+            landmarkName = "prepare(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -319,7 +319,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "49"
             endingLineNumber = "49"
-            landmarkName = "startIndicator()"
+            landmarkName = "stopIndicator()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

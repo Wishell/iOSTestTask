@@ -12,6 +12,7 @@ protocol PresenterViewInput: class {
     
     func prepare (_ registrate :((UITableView)->Void))
     var tableDataSource: (() -> DataSource)? { get set }
+    var onTableItemTap: ((Category) -> Void)?
     func startIndicator ()
     func stopIndicator ()
     
@@ -27,6 +28,15 @@ final class PresenterView: UIView {
 
 // MARK: - PresenterViewInput
 extension PresenterView: PresenterViewInput {
+    var tableDataSource: (() -> DataSource)? {
+        get {
+            <#code#>
+        }
+        set {
+            <#code#>
+        }
+    }
+    
     
     func prepare (_ registrate :((UITableView)->Void)){
         registrate(self.table)
