@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "OauthManager.handle(_:):OauthManager.swift">
+      </ContextState>
+      <ContextState
+         contextName = "FitBitUrlApi.getUrl():Repository.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "KeychainSingleton.share.keychain[&quot;fitbit.token&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Repository.getActivity(_:):Repository.swift">
+      </ContextState>
+      <ContextState
+         contextName = "APIClient.load(_:result:):APIClient.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

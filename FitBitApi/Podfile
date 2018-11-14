@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'FitBitApi' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for FitBitApi
+	use_frameworks!
+	pod 'KeychainAccess'
+  target 'FitBitApiTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'FitBitApiUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
