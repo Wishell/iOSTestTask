@@ -13,6 +13,11 @@ final class ActivityViewController: UIViewController {
     var model: ActivityModelInput!
     lazy var contentView: ActivityViewInput = { return view as! ActivityViewInput }()
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+    
 }
 
 // MARK: - ActivityModelOutput

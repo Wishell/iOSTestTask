@@ -19,15 +19,16 @@ final class PresenterViewController: UIViewController {
         super.viewDidLoad()
         model.load()
         contentView.startIndicator()
-        contentView.onTableItemTap = {[unowned self] item in
+        contentView.tableDataSource = { [unowned self] in return self.dataSource }
+        contentView.onTableItemTap = { [unowned self] item in
             self.performSegue(withIdentifier: "ActivitySeque", sender: item)
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "ActivitySeque", let data = sender as? [ActivityElement] {
+        if segue.identifier == "ActivitySeque", let data = sender as? Category {
             let controller = segue.destination as! ActivityViewController
-            controller.set(data)
+            controller.set(data.activities)
         }
     }
 }

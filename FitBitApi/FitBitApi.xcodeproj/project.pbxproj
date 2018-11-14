@@ -243,6 +243,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		48615445219CC98900EF6F9B /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				4819462E219C7558009F59B8 /* Spinner.xib */,
+				4819463A219C8A35009F59B8 /* SpinnerView.swift */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
 		48E4A9F0219B56C20024FAFB = {
 			isa = PBXGroup;
 			children = (
@@ -268,6 +277,7 @@
 		48E4A9FB219B56C20024FAFB /* FitBitApi */ = {
 			isa = PBXGroup;
 			children = (
+				48615445219CC98900EF6F9B /* Xib */,
 				4819463C219C9556009F59B8 /* Extensions */,
 				48E4AA59219B7A2D0024FAFB /* KeychainHolder */,
 				48E4AA2A219B57BC0024FAFB /* Modules */,
@@ -364,6 +374,7 @@
 		48E4AA44219B739C0024FAFB /* Cathegory */ = {
 			isa = PBXGroup;
 			children = (
+				48E4AA58219B73D50024FAFB /* View */,
 				48E4AA55219B73B90024FAFB /* Model */,
 				48E4AA56219B73C00024FAFB /* Controller */,
 				48E4AA57219B73CB0024FAFB /* Configurator */,
@@ -374,7 +385,6 @@
 		48E4AA55219B73B90024FAFB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				48E4AA58219B73D50024FAFB /* View */,
 				48E4AA45219B73B00024FAFB /* PresenterModelOutput.swift */,
 				48E4AA4A219B73B00024FAFB /* PresenterModel.swift */,
 				48E4AA4B219B73B00024FAFB /* PresenterModelInput.swift */,
@@ -407,8 +417,6 @@
 			isa = PBXGroup;
 			children = (
 				48E4AA49219B73B00024FAFB /* PresenterView.swift */,
-				4819462E219C7558009F59B8 /* Spinner.xib */,
-				4819463A219C8A35009F59B8 /* SpinnerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
