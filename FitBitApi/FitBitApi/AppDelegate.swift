@@ -48,17 +48,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let vc: AutorizationViewController = storyboard.instantiateViewController(withIdentifier: "AutorizationViewController") as! AutorizationViewController
+        let vc: PresenterViewController = storyboard.instantiateViewController(withIdentifier: "PresenterViewController") as! PresenterViewController
         self.window?.rootViewController = vc
-        
-        let controller: AutorizationViewControllerInput = storyboard.instantiateViewController(withIdentifier: "AutorizationViewController") as! AutorizationViewControllerInput
-        
-        DispatchQueue.main.async {
-            controller.login()
-        }
 
-
-        
         return true
     }
 

@@ -8,5 +8,5 @@
 import KeychainAccess
 
 protocol AutorizationModelInput {
-func load()
+
 }

@@ -6,4 +6,7 @@
 //  Copyright © 2018 Wishell. All rights reserved.
 //
 
-protocol PresenterModelOutput: class {}
+protocol PresenterModelOutput: class {
+    func modelDidSucces(_ data: Activity)
+    func modelDidFail()
+}

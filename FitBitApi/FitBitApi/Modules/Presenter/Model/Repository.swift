@@ -22,7 +22,7 @@ struct Category: Codable {
 }
 
 struct ActivityElement: Codable {
-    let accessLevel: AccessLevel
+    //let accessLevel: AccessLevel
     let activityLevels: [ActivityLevel]?
     let hasSpeed: Bool
     let id: Int
@@ -30,9 +30,9 @@ struct ActivityElement: Codable {
     let mets: Double?
 }
 
-enum AccessLevel: String, Codable {
-    case accessLevelPUBLIC = "PUBLIC"
-}
+//enum AccessLevel: String, Codable {
+//    case accessLevelPUBLIC = "PUBLIC"
+//}
 
 struct ActivityLevel: Codable {
     let id: Int

@@ -11,5 +11,16 @@ import Foundation
 final class PresenterModel: PresenterModelInput {
     
     weak var output: PresenterModelOutput!
+    let repository = Repository(apiClient: APIClient())
     
+    func load(){
+        repository.getActivity{ (result) in
+            switch result {
+            case .success(let items):
+                self.output.modelDidSucces(items)
+            case .failure(let error):
+                self.output.modelDidFail()
+            }
+        }
+    }
 }

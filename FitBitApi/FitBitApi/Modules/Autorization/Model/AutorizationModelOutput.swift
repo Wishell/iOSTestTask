@@ -7,6 +7,4 @@
 //
 
 protocol AutorizationModelOutput: class {
-    func modelDidSucces(_ data: Activity)
-    func modelDidFail()
 }
