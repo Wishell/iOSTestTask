@@ -12,7 +12,7 @@ protocol PresenterViewInput: class {
 
     func prepare (_ registrate: ((UITableView) -> Void))
     var tableDataSource: (() -> DataSource)? { get set }
-    var onTableItemTap: ((Category) -> Void)? { get set }
+    var onTableItemTap: ((Any) -> Void)? { get set }
     func startIndicator ()
     func stopIndicator ()
 
@@ -22,7 +22,7 @@ final class PresenterView: UIView {
 
     @IBOutlet weak var spinnerView: SpinnerView!
     @IBOutlet weak var table: UITableView!
-    var onTableItemTap: ((Category) -> Void)?
+    var onTableItemTap: ((Any) -> Void)?
     var tableDataSource: (() -> DataSource)?
 
 }

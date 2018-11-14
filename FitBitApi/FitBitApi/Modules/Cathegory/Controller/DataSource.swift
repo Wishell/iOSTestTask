@@ -9,7 +9,7 @@
 import UIKit
 
 final class DataSource: NSObject {
-    var items: [Category] = []
+    var items: [Any] = []
 }
 
 extension DataSource: UITableViewDataSource {
@@ -21,9 +21,24 @@ extension DataSource: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let identifier = "\(UITableViewCell.self)"
         let item = items[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: identifier) ?? UITableViewCell(style: .subtitle, reuseIdentifier: identifier)
-        cell.textLabel?.text = item.name
-        return cell
+
+        if type(of: item) == Category.self {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Category") as! CategoryCell
+            let `item` = item as! Category
+            cell.lable.text = item.name
+            return cell
+        } else if type(of: item) == ActivityElement.self {
+            let cell = tableView.dequeueReusableCell(withIdentifier: identifier) ?? UITableViewCell(style: .subtitle, reuseIdentifier: identifier)
+            let `item` = item as! ActivityElement
+            cell.textLabel?.text = item.name
+            return cell
+        } else if type(of: item) == ActivityLevel.self {
+            let cell = tableView.dequeueReusableCell(withIdentifier: identifier) ?? UITableViewCell(style: .subtitle, reuseIdentifier: identifier)
+            let `item` = item as! ActivityLevel
+            cell.textLabel?.text = item.name
+            return cell
+        }
+        return UITableViewCell()
     }
 
 }

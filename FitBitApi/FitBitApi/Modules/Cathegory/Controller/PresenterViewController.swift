@@ -21,7 +21,22 @@ final class PresenterViewController: UIViewController {
         contentView.startIndicator()
         contentView.tableDataSource = { [unowned self] in return self.dataSource }
         contentView.onTableItemTap = { [unowned self] item in
-            self.performSegue(withIdentifier: "ActivitySeque", sender: item)
+            if type(of: item) == Category.self {
+                
+                
+                let `item` = item as! Category
+                self.dataSource.items = item.activities
+            } else if type(of: item) == ActivityElement.self {
+                let `item` = item as! ActivityElement
+                guard let level = item.activityLevels else { return }
+                self.dataSource.items = level
+            }
+            self.contentView.prepare { (table) in
+                table.delegate = self.contentView.self as? UITableViewDelegate
+                table.dataSource = self.dataSource
+                table.register(UITableViewCell.self, forCellReuseIdentifier: "\(UITableViewCell.self)")
+                table.reloadData()
+            }
         }
     }
     
@@ -43,7 +58,9 @@ extension PresenterViewController: PresenterModelOutput {
             self.contentView.prepare { (table) in
                 table.delegate = self.contentView.self as? UITableViewDelegate
                 table.dataSource = self.dataSource
-                table.register(UITableViewCell.self, forCellReuseIdentifier: "\(UITableViewCell.self)")
+                //table.register(UITableViewCell.self, forCellReuseIdentifier: "\(UITableViewCell.self)")
+                let nib = UINib(nibName: "Category", bundle: nil)
+                table.register(nib, forCellReuseIdentifier: "Category")
                 table.reloadData()
             }
         }
