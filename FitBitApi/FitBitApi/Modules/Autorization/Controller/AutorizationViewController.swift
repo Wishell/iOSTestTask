@@ -13,7 +13,7 @@ final class AutorizationViewController: UIViewController {
 
     var model: AutorizationModelInput!
     lazy var contentView: AutorizationViewInput = { return view as! AutorizationViewInput }()
-    var date: String?
+    var date: Date?
     var safariVC: SFSafariViewController?
 
     override func viewDidLoad() {

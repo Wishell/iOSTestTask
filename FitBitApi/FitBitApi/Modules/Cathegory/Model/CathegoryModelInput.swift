@@ -10,6 +10,6 @@ import KeychainAccess
 protocol CathegoryModelInput {
 
     func load()
-    var date: String! {get set}
-    
+    var date: Date! { get set }
+
 }

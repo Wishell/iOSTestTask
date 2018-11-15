@@ -10,7 +10,7 @@ import UIKit
 
 protocol AutorizationViewInput: class {
     var action: (() -> Void)? { get set }
-    func getDate() -> String
+    func getDate() -> Date
 }
 
 final class AutorizationView: UIView {
@@ -27,10 +27,8 @@ final class AutorizationView: UIView {
 // MARK: - AutorizationViewInput
 extension AutorizationView: AutorizationViewInput {
 
-    func getDate() -> String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = Constants.FitBitUrlApi2.dateFormat
-        return dateFormatter.string(from: datePicker.date)
+    func getDate() -> Date {
+        return datePicker.date
     }
 
 }

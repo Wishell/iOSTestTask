@@ -13,13 +13,13 @@ final class CathegoryModel: CathegoryModelInput {
 
     weak var output: CathegoryModelOutput!
     var holder: KeychainHolder!
-    var date: String!
+    var date: Date!
 
     let repository = Repository(apiClient: APIClient(KeychainHolder()), keychainHolder: KeychainHolder())
 
 
     func load() {
-        repository.getActivity(date) { (result) in
+        repository.getActivity(date.toFormattedString(format: Constants.FitBitUrlApi2.dateFormat)!) { (result) in
             switch result {
             case .success(let items):
                 self.output.modelDidSucces(items)

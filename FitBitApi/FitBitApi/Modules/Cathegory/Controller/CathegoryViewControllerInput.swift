@@ -9,6 +9,6 @@ import KeychainAccess
 
 protocol CathegoryViewControllerInput: class {
     
-    func set (_ date: String)
+    func set (_ date: Date)
     
 }

@@ -80,7 +80,7 @@ extension CathegoryViewController: CathegoryModelOutput {
 // MARK: - PresenterViewControllerInput
 extension CathegoryViewController: CathegoryViewControllerInput {
 
-    func set (_ date: String) {
+    func set (_ date: Date) {
         self.model.date = date
     }
 

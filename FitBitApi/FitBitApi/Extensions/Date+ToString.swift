@@ -10,10 +10,10 @@ import Foundation
 
 extension Date {
     
-    func ToString(from data: Date, to format: String) -> String? {
+    func toFormattedString(format: String) -> String? {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = format
-        return dateFormatter.string(from: data)
+        return dateFormatter.string(from: self)
     }
     
 }
