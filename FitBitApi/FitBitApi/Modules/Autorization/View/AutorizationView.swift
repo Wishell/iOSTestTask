@@ -9,10 +9,13 @@
 import UIKit
 
 protocol AutorizationViewInput: class {
-    var action: (() -> Void)? { get set } }
+    var action: (() -> Void)? { get set }
+    func getDate() -> String
+}
 
 final class AutorizationView: UIView {
 
+    @IBOutlet weak var datePicker: UIDatePicker!
     @IBAction func OnLoginTap(_ sender: Any) {
         action?()
     }
@@ -22,4 +25,12 @@ final class AutorizationView: UIView {
 }
 
 // MARK: - AutorizationViewInput
-extension AutorizationView: AutorizationViewInput { }
+extension AutorizationView: AutorizationViewInput{
+    //2018-11-11
+func getDate() -> String {
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = Constants.FitBitUrlApi2.dateFormat
+    return dateFormatter.string(from: datePicker.date)
+}
+
+}

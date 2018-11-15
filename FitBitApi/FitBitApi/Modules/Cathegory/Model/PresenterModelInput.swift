@@ -10,5 +10,6 @@ import KeychainAccess
 protocol PresenterModelInput {
 
     func load()
-
+    var date: String! {get set}
+    
 }

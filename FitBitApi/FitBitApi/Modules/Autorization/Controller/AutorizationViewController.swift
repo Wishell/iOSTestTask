@@ -13,24 +13,31 @@ final class AutorizationViewController: UIViewController {
     
     var model: AutorizationModelInput!
     lazy var contentView: AutorizationViewInput = { return view as! AutorizationViewInput }()
-    private var safarivc: SFSafariViewController?
+    var date: String?
+    var safariVC: SFSafariViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         contentView.action = { [unowned self] in
             guard let url = URL(string: Constants.FitBitUrlApi2.authorizationUrl) else {return}
             let vc = SFSafariViewController(url: url)
             self.present(vc, animated: true, completion: nil)
-            self.safarivc = vc
+            self.safariVC = vc
         }
         
         NotificationCenter.default.addObserver(self, selector: #selector(login), name: .successLogin, object: nil)
     }
     
     @objc func login(){
-        safarivc?.dismiss(animated: true) {
-            self.performSegue(withIdentifier: "PresenterSeque", sender: nil)
+        date = contentView.getDate()
+        self.performSegue(withIdentifier: "PresenterSeque", sender: nil)
+        safariVC?.dismiss(animated: false)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "PresenterSeque"{
+            let controller = segue.destination as! PresenterViewController
+            controller.set(self.date!)
         }
     }
     

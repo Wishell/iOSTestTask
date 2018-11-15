@@ -7,4 +7,8 @@
 //
 import KeychainAccess
 
-protocol PresenterViewControllerInput: class { }
+protocol PresenterViewControllerInput: class {
+    
+    func set (_ date: String)
+    
+}

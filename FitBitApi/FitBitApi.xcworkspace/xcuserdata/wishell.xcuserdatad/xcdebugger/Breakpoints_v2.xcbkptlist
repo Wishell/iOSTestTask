@@ -326,15 +326,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FitBitApi/Modules/Cathegory/Controller/PresenterViewController.swift"
-            timestampString = "563976290.9434921"
+            timestampString = "563990261.639648"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -346,11 +346,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FitBitApi/Modules/Cathegory/Controller/PresenterViewController.swift"
-            timestampString = "563976290.943635"
+            timestampString = "563990261.639762"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -362,7 +362,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FitBitApi/Modules/Activity/Controller/ActivityViewController.swift"
-            timestampString = "563976290.9437439"
+            timestampString = "563990261.639864"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "30"
@@ -378,7 +378,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FitBitApi/Modules/Cathegory/Controller/DataSource.swift"
-            timestampString = "563976290.943805"
+            timestampString = "563990261.639917"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "32"
@@ -394,7 +394,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FitBitApi/Modules/Cathegory/View/PresenterView.swift"
-            timestampString = "563976290.9438829"
+            timestampString = "563990261.6399961"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "63"
@@ -410,7 +410,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FitBitApi/Modules/Cathegory/Controller/DataSource.swift"
-            timestampString = "563976290.943944"
+            timestampString = "563990261.640057"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "42"
@@ -426,7 +426,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FitBitApi/Modules/Cathegory/Controller/PresenterViewController.swift"
-            timestampString = "563976290.944007"
+            timestampString = "563990261.64012"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "45"
@@ -442,7 +442,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FitBitApi/Modules/Cathegory/Controller/DataSource.swift"
-            timestampString = "563976290.944091"
+            timestampString = "563990261.6402121"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "26"
@@ -458,7 +458,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FitBitApi/Modules/Cathegory/Controller/DataSource.swift"
-            timestampString = "563976290.944157"
+            timestampString = "563990261.64028"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "27"
@@ -474,7 +474,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FitBitApi/Modules/Cathegory/Controller/DataSource.swift"
-            timestampString = "563976290.944219"
+            timestampString = "563990261.640343"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
@@ -489,13 +489,45 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "FitBitApi/Modules/Cathegory/Controller/PresenterViewController.swift"
-            timestampString = "563976290.944273"
+            filePath = "FitBitApi/Modules/Autorization/Controller/AutorizationViewController.swift"
+            timestampString = "563990261.640794"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "login()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FitBitApi/Modules/Cathegory/Model/Repository.swift"
+            timestampString = "563990261.640851"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "getActivity(_:_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FitBitApi/Modules/Cathegory/Model/Repository.swift"
+            timestampString = "563990261.640902"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "getActivity(_:_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

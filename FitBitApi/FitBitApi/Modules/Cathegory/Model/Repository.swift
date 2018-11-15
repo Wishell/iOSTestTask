@@ -14,7 +14,7 @@ final class Repository {
     private let holder: KeychainHolder!
     private func buildUrl(date: String, activities: ActivityType) -> URL? {
         guard let userId = holder.keychain["fitbit.userId"],
-            let fitBitUrl = URL(string: Constants.FitBitUrlApi2.prefixUrl + userId + activities.rawValue + date + Constants.FitBitUrlApi2.formatType)
+            let fitBitUrl = URL(string: Constants.FitBitUrlApi2.prefixUrl + userId + activities.rawValue + "/date/" + date + Constants.FitBitUrlApi2.formatType)
             else { return nil }
         return fitBitUrl
     }

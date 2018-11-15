@@ -46,7 +46,6 @@ final class PresenterViewController: UIViewController {
                 guard let level = item.activityLevels else { return }
                 self.performSegue(withIdentifier: "ActivitySeque", sender: item)
             }
-            //self.contentView.prepareTable(self.prepareClousure!)
         }
     }
     
@@ -67,13 +66,6 @@ extension PresenterViewController: PresenterModelOutput {
         DispatchQueue.main.async {
             self.contentView.registerCell(self.registerClousure!, cellName: "Category")
             self.contentView.prepareTable(self.prepareClousure!)
-//            self.contentView.prepareTable { (table) in
-//                table.delegate = self.contentView.self as? UITableViewDelegate
-//                table.dataSource = self.dataSource
-//                let nib = UINib(nibName: "Category", bundle: nil)
-//                table.register(nib, forCellReuseIdentifier: "Category")
-//                table.reloadData()
-//            }
         }
     }
 
@@ -84,4 +76,10 @@ extension PresenterViewController: PresenterModelOutput {
 }
 
 // MARK: - PresenterViewControllerInput
-extension PresenterViewController: PresenterViewControllerInput { }
+extension PresenterViewController: PresenterViewControllerInput {
+    
+    func set (_ date: String) {
+        self.model.date = date
+    }
+    
+}

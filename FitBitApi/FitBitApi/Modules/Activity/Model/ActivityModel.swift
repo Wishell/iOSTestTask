@@ -13,4 +13,5 @@ final class ActivityModel: ActivityModelInput {
     weak var output: ActivityModelOutput!
     var data: [Any]!
     
+    
 }

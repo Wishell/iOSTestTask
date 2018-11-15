@@ -20,9 +20,9 @@ struct Constants {
         
        static let prefixUrl = "https://api.fitbit.com/1/user/"
        static let formatType: String = ".json"
+        static let dateFormat: String = "YYYY-MM-dd"
        
         private init() {}
-        
     }
     
     private init() {}

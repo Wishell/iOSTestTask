@@ -13,11 +13,13 @@ final class PresenterModel: PresenterModelInput {
 
     weak var output: PresenterModelOutput!
     var holder: KeychainHolder!
+    var date: String!
 
     let repository = Repository(apiClient: APIClient(KeychainHolder()), keychainHolder: KeychainHolder())
 
+    
     func load() {
-        repository.getActivity("/2018-11-11") { (result) in
+        repository.getActivity(date) { (result) in
             switch result {
             case .success(let items):
                 self.output.modelDidSucces(items)
