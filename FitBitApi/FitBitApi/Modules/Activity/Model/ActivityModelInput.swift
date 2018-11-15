@@ -8,6 +8,6 @@
 
 protocol ActivityModelInput {
     
-    var data: [ActivityElement]! { get set }
+    var data: [Any]! { get set }
     
 }

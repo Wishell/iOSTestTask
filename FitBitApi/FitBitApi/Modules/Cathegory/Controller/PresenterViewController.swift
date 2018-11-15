@@ -35,7 +35,7 @@ final class PresenterViewController: UIViewController {
             if type(of: item) == Category.self {
                 let `item` = item as! Category
                 self.dataSource.items = item.activities
-                self.contentView.registerCell(self.registerClousure!, cellName: "Activity")
+                self.contentView.registerCell(self.registerClousure!, cellName: "ActivityElementCell")
                 if let subCategories = item.subCategories {
                     subCategories.compactMap{self.dataSource.items.append($0)}
                     self.contentView.registerCell(self.registerClousure!, cellName: "Category")
@@ -44,16 +44,16 @@ final class PresenterViewController: UIViewController {
             } else if type(of: item) == ActivityElement.self {
                 let `item` = item as! ActivityElement
                 guard let level = item.activityLevels else { return }
-                self.dataSource.items = level
+                self.performSegue(withIdentifier: "ActivitySeque", sender: item)
             }
             //self.contentView.prepareTable(self.prepareClousure!)
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "ActivitySeque", let data = sender as? Category {
+        if segue.identifier == "ActivitySeque", let data = sender as? ActivityElement {
             let controller = segue.destination as! ActivityViewController
-            controller.set(data.activities)
+            controller.set(data.activityLevels!)
         }
     }
 }

@@ -26,7 +26,7 @@ extension ActivityViewController: ActivityModelOutput {}
 // MARK: - ActivityViewControllerInput
 extension ActivityViewController: ActivityViewControllerInput {
     
-    func set (_ data: [ActivityElement]) {
+    func set (_ data: [Any]) {
         model.data = data
     }
     

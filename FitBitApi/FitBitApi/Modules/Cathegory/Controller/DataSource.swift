@@ -28,9 +28,14 @@ extension DataSource: UITableViewDataSource {
             cell.lable.text = item.name
             return cell
         } else if type(of: item) == ActivityElement.self {
-            let cell = tableView.dequeueReusableCell(withIdentifier: identifier) ?? UITableViewCell(style: .subtitle, reuseIdentifier: identifier)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ActivityElementCell") as! ActivityElementCell
             let `item` = item as! ActivityElement
-            cell.textLabel?.text = item.name
+            cell.name.text = item.name
+            if let mets = item.mets {
+                cell.mets.text = String(mets)
+            } else {
+                cell.mets.isHidden = true
+            }
             return cell
         } else if type(of: item) == ActivityLevel.self {
             let cell = tableView.dequeueReusableCell(withIdentifier: identifier) ?? UITableViewCell(style: .subtitle, reuseIdentifier: identifier)

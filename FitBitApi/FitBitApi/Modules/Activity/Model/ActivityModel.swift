@@ -11,6 +11,6 @@ import Foundation
 final class ActivityModel: ActivityModelInput {
     
     weak var output: ActivityModelOutput!
-    var data: [ActivityElement]!
+    var data: [Any]!
     
 }

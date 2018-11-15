@@ -8,6 +8,6 @@
 
 protocol ActivityViewControllerInput: class {
     
-    func set (_ data: [ActivityElement])
+    func set (_ data: [Any])
     
 }
