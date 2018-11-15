@@ -15,14 +15,18 @@ final class PresenterViewController: UIViewController {
     lazy var contentView: PresenterViewInput = { return view as! PresenterViewInput }()
     let dataSource = DataSource()
     private var prepareClousure: ((UITableView)-> Void)?
+    private var registerClousure: ((UITableView, String)-> Void)?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         prepareClousure = {[unowned self] (table) in
             table.delegate = self.contentView.self as? UITableViewDelegate
             table.dataSource = self.dataSource
-            table.register(UITableViewCell.self, forCellReuseIdentifier: "\(UITableViewCell.self)")
             table.reloadData()
+        }
+        registerClousure = {(table, cellName) in
+            let nib = UINib(nibName: cellName, bundle: nil)
+            table.register(nib, forCellReuseIdentifier: cellName)
         }
         model.load()
         contentView.startIndicator()
@@ -38,7 +42,7 @@ final class PresenterViewController: UIViewController {
                 guard let level = item.activityLevels else { return }
                 self.dataSource.items = level
             }
-            self.contentView.prepare(self.prepareClousure!)
+            self.contentView.prepareTable(self.prepareClousure!)
         }
     }
     
@@ -59,13 +63,15 @@ extension PresenterViewController: PresenterModelOutput {
         contentView.stopIndicator()
         dataSource.items = data.categories
         DispatchQueue.main.async {
-            self.contentView.prepare { (table) in
-                table.delegate = self.contentView.self as? UITableViewDelegate
-                table.dataSource = self.dataSource
-                let nib = UINib(nibName: "Category", bundle: nil)
-                table.register(nib, forCellReuseIdentifier: "Category")
-                table.reloadData()
-            }
+            self.contentView.registerCell(self.registerClousure!, cellName: "Category")
+            self.contentView.prepareTable(self.prepareClousure!)
+//            self.contentView.prepareTable { (table) in
+//                table.delegate = self.contentView.self as? UITableViewDelegate
+//                table.dataSource = self.dataSource
+//                let nib = UINib(nibName: "Category", bundle: nil)
+//                table.register(nib, forCellReuseIdentifier: "Category")
+//                table.reloadData()
+//            }
         }
     }
 
