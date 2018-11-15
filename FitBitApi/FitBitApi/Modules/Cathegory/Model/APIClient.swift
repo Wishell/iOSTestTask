@@ -19,7 +19,7 @@ final class APIClient {
     func load(_ resource: Resource, result: @escaping ((Result<Data>) -> Void)) {
         var request = URLRequest(resource)
         request.allHTTPHeaderFields?["Authorization"] = keyHolder["fitbit.token"]
-        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+        let task = URLSession.shared.dataTask(with: request) { (data, _, error) in
             guard let `data` = data else {
                 result(.failure(APIClientError.noData))
                 return

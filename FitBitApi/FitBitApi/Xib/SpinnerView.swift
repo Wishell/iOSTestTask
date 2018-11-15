@@ -10,7 +10,6 @@ import UIKit
 
 final class SpinnerView: UIView {
 
-
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var activity: UIActivityIndicatorView!
 

@@ -17,7 +17,6 @@ final class CathegoryModel: CathegoryModelInput {
 
     let repository = Repository(apiClient: APIClient(KeychainHolder()), keychainHolder: KeychainHolder())
 
-
     func load() {
         repository.getActivity(date.toFormattedString(format: Constants.FitBitUrlApi2.dateFormat)!) { (result) in
             switch result {
@@ -30,4 +29,3 @@ final class CathegoryModel: CathegoryModelInput {
     }
 
 }
-

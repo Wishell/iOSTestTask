@@ -9,12 +9,12 @@
 import UIKit
 
 final class CategoryCell: UITableViewCell {
-    
+
     @IBOutlet weak var lable: UILabel!
 
     override func prepareForReuse() {
         super.prepareForReuse()
         lable.text = nil
     }
-    
+
 }

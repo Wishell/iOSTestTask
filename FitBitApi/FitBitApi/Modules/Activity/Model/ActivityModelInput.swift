@@ -7,7 +7,7 @@
 //
 
 protocol ActivityModelInput {
-    
+
     var data: [Any]! { get set }
-    
+
 }

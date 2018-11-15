@@ -11,6 +11,5 @@ import UIKit
 final class ActivityElementCell: UITableViewCell {
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var mets: UILabel!
-    
-    
+
 }

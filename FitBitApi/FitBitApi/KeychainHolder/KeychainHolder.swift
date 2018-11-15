@@ -10,9 +10,9 @@ import Foundation
 import KeychainAccess
 
 final class KeychainHolder {
-    
-    let keychain: Keychain = Keychain(service: "com.Vishneuski.fitbit") 
-    
+
+    let keychain: Keychain = Keychain(service: "com.Vishneuski.fitbit")
+
     subscript (key: String) -> String? {
         get {
             return keychain[key]
@@ -21,5 +21,5 @@ final class KeychainHolder {
             keychain[key] = newValue
         }
     }
-    
+
 }

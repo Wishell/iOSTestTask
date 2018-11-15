@@ -9,18 +9,18 @@
 import UIKit
 
 final class ActivityModuleConfigurator {
-    
+
     func configureModuleForViewInput<UIViewController>(viewInput: UIViewController) {
         if let viewController = viewInput as? ActivityViewController {
             configure(viewController: viewController)
         }
     }
-    
+
     private func configure(viewController: ActivityViewController) {
         let model = ActivityModel()
         model.output = viewController
-        
+
         viewController.model = model
     }
-    
+
 }
