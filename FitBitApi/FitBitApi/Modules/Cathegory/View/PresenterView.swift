@@ -11,8 +11,8 @@ import UIKit
 protocol PresenterViewInput: class {
 
     func prepareTable (_ prepare: ((UITableView) -> Void))
-    func registerCell(_ register: (UITableView, String)-> Void , cellName: String)
-    var register: ((UITableView, String)-> Void)? {get set}
+    func registerCell(_ register: (UITableView, String) -> Void, cellName: String)
+    var register: ((UITableView, String) -> Void)? { get set }
     var tableDataSource: (() -> DataSource)? { get set }
     var onTableItemTap: ((Any) -> Void)? { get set }
     func startIndicator ()
@@ -26,7 +26,7 @@ final class PresenterView: UIView {
     @IBOutlet weak var table: UITableView!
     var onTableItemTap: ((Any) -> Void)?
     var tableDataSource: (() -> DataSource)?
-    var register: ((UITableView, String)-> Void)?
+    var register: ((UITableView, String) -> Void)?
 }
 
 // MARK: - PresenterViewInput
@@ -35,8 +35,8 @@ extension PresenterView: PresenterViewInput {
     func prepareTable (_ prepare: ((UITableView) -> Void)) {
         prepare(self.table)
     }
-    
-    func registerCell(_ register: (UITableView, String)-> Void , cellName: String){
+
+    func registerCell(_ register: (UITableView, String) -> Void, cellName: String) {
         register(self.table, cellName)
     }
 

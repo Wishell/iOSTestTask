@@ -25,12 +25,11 @@
 		4819464D219CAEB4009F59B8 /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48194645219CAEB4009F59B8 /* ActivityModel.swift */; };
 		4819464E219CAEB4009F59B8 /* ActivityModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48194646219CAEB4009F59B8 /* ActivityModelInput.swift */; };
 		4819464F219CAEB4009F59B8 /* ActivityModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48194647219CAEB4009F59B8 /* ActivityModuleConfigurator.swift */; };
+		483FF83C219DFEDF00C11CD0 /* Double+Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483FF83B219DFEDF00C11CD0 /* Double+Round.swift */; };
 		48400ACA219BF99E0058A785 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48400AC9219BF99E0058A785 /* DataSource.swift */; };
 		48615447219CD82700EF6F9B /* Category.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48615446219CD82700EF6F9B /* Category.xib */; };
 		48615449219CD8D600EF6F9B /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48615448219CD8D600EF6F9B /* CategoryCell.swift */; };
 		4861544B219CDA2B00EF6F9B /* ActivityLevel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4861544A219CDA2B00EF6F9B /* ActivityLevel.xib */; };
-		4861544D219D59D400EF6F9B /* ActivityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4861544C219D59D400EF6F9B /* ActivityCell.xib */; };
-		4861544F219D59F000EF6F9B /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4861544E219D59F000EF6F9B /* ActivityCell.swift */; };
 		48615451219D8B9B00EF6F9B /* ActivityElementCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48615450219D8B9B00EF6F9B /* ActivityElementCell.xib */; };
 		48615453219D8F7B00EF6F9B /* ActivityElementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48615452219D8F7B00EF6F9B /* ActivityElementCell.swift */; };
 		48E4A9FD219B56C20024FAFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4A9FC219B56C20024FAFB /* AppDelegate.swift */; };
@@ -59,14 +58,6 @@
 		48E4AA54219B73B00024FAFB /* PresenterModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA4C219B73B00024FAFB /* PresenterModuleConfigurator.swift */; };
 		48E4AA5B219B7A5A0024FAFB /* KeychainHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA5A219B7A5A0024FAFB /* KeychainHolder.swift */; };
 		48E4AA5D219B7CA60024FAFB /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA5C219B7CA60024FAFB /* Repository.swift */; };
-		48E4AA67219BECCF0024FAFB /* DetailsModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA5F219BECCF0024FAFB /* DetailsModelOutput.swift */; };
-		48E4AA68219BECCF0024FAFB /* DetailsViewControllerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA60219BECCF0024FAFB /* DetailsViewControllerInput.swift */; };
-		48E4AA69219BECCF0024FAFB /* DetailsModuleInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA61219BECCF0024FAFB /* DetailsModuleInitializer.swift */; };
-		48E4AA6A219BECCF0024FAFB /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA62219BECCF0024FAFB /* DetailsViewController.swift */; };
-		48E4AA6B219BECCF0024FAFB /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA63219BECCF0024FAFB /* DetailsView.swift */; };
-		48E4AA6C219BECCF0024FAFB /* DetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA64219BECCF0024FAFB /* DetailsModel.swift */; };
-		48E4AA6D219BECCF0024FAFB /* DetailsModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA65219BECCF0024FAFB /* DetailsModelInput.swift */; };
-		48E4AA6E219BECCF0024FAFB /* DetailsModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA66219BECCF0024FAFB /* DetailsModuleConfigurator.swift */; };
 		9ABC68922AC1DFD590F61746 /* Pods_FitBitApiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA00072470642AB5A420C652 /* Pods_FitBitApiTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -107,12 +98,11 @@
 		48194645219CAEB4009F59B8 /* ActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
 		48194646219CAEB4009F59B8 /* ActivityModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModelInput.swift; sourceTree = "<group>"; };
 		48194647219CAEB4009F59B8 /* ActivityModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModuleConfigurator.swift; sourceTree = "<group>"; };
+		483FF83B219DFEDF00C11CD0 /* Double+Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Round.swift"; sourceTree = "<group>"; };
 		48400AC9219BF99E0058A785 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		48615446219CD82700EF6F9B /* Category.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Category.xib; sourceTree = "<group>"; };
 		48615448219CD8D600EF6F9B /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		4861544A219CDA2B00EF6F9B /* ActivityLevel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityLevel.xib; sourceTree = "<group>"; };
-		4861544C219D59D400EF6F9B /* ActivityCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityCell.xib; sourceTree = "<group>"; };
-		4861544E219D59F000EF6F9B /* ActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
 		48615450219D8B9B00EF6F9B /* ActivityElementCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityElementCell.xib; sourceTree = "<group>"; };
 		48615452219D8F7B00EF6F9B /* ActivityElementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityElementCell.swift; sourceTree = "<group>"; };
 		48E4A9F9219B56C20024FAFB /* FitBitApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitBitApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,14 +137,6 @@
 		48E4AA4C219B73B00024FAFB /* PresenterModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterModuleConfigurator.swift; sourceTree = "<group>"; };
 		48E4AA5A219B7A5A0024FAFB /* KeychainHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHolder.swift; sourceTree = "<group>"; };
 		48E4AA5C219B7CA60024FAFB /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
-		48E4AA5F219BECCF0024FAFB /* DetailsModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsModelOutput.swift; sourceTree = "<group>"; };
-		48E4AA60219BECCF0024FAFB /* DetailsViewControllerInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewControllerInput.swift; sourceTree = "<group>"; };
-		48E4AA61219BECCF0024FAFB /* DetailsModuleInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsModuleInitializer.swift; sourceTree = "<group>"; };
-		48E4AA62219BECCF0024FAFB /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
-		48E4AA63219BECCF0024FAFB /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
-		48E4AA64219BECCF0024FAFB /* DetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsModel.swift; sourceTree = "<group>"; };
-		48E4AA65219BECCF0024FAFB /* DetailsModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsModelInput.swift; sourceTree = "<group>"; };
-		48E4AA66219BECCF0024FAFB /* DetailsModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsModuleConfigurator.swift; sourceTree = "<group>"; };
 		6B4275F4C3FF91D3BF411CB1 /* Pods-FitBitApi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitBitApi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FitBitApi/Pods-FitBitApi.debug.xcconfig"; sourceTree = "<group>"; };
 		A37DADC9F7D3156322FEE709 /* Pods-FitBitApiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitBitApiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FitBitApiUITests/Pods-FitBitApiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C6D4A0203AA4693F948326D9 /* Pods-FitBitApiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitBitApiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FitBitApiTests/Pods-FitBitApiTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -206,6 +188,7 @@
 			children = (
 				4819463D219C959E009F59B8 /* UIAlertController+ErrorDescription.swift */,
 				48194638219C88D3009F59B8 /* URLRequest+Resource.swift */,
+				483FF83B219DFEDF00C11CD0 /* Double+Round.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -265,8 +248,6 @@
 				48615446219CD82700EF6F9B /* Category.xib */,
 				48615448219CD8D600EF6F9B /* CategoryCell.swift */,
 				4861544A219CDA2B00EF6F9B /* ActivityLevel.xib */,
-				4861544C219D59D400EF6F9B /* ActivityCell.xib */,
-				4861544E219D59F000EF6F9B /* ActivityCell.swift */,
 				48615450219D8B9B00EF6F9B /* ActivityElementCell.xib */,
 				48615452219D8F7B00EF6F9B /* ActivityElementCell.swift */,
 			);
@@ -332,7 +313,6 @@
 		48E4AA2A219B57BC0024FAFB /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				48E4AA5E219BEC9C0024FAFB /* Details */,
 				4819463F219CAE8F009F59B8 /* Activity */,
 				48E4AA44219B739C0024FAFB /* Cathegory */,
 				48E4AA43219B73840024FAFB /* Autorization */,
@@ -448,53 +428,6 @@
 				48E4AA5A219B7A5A0024FAFB /* KeychainHolder.swift */,
 			);
 			path = KeychainHolder;
-			sourceTree = "<group>";
-		};
-		48E4AA5E219BEC9C0024FAFB /* Details */ = {
-			isa = PBXGroup;
-			children = (
-				48E4AA6F219BECD80024FAFB /* Model */,
-				48E4AA70219BECE20024FAFB /* Controller */,
-				48E4AA71219BECED0024FAFB /* Configurator */,
-				48E4AA72219BECF70024FAFB /* View */,
-			);
-			path = Details;
-			sourceTree = "<group>";
-		};
-		48E4AA6F219BECD80024FAFB /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				48E4AA5F219BECCF0024FAFB /* DetailsModelOutput.swift */,
-				48E4AA64219BECCF0024FAFB /* DetailsModel.swift */,
-				48E4AA65219BECCF0024FAFB /* DetailsModelInput.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		48E4AA70219BECE20024FAFB /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				48E4AA60219BECCF0024FAFB /* DetailsViewControllerInput.swift */,
-				48E4AA62219BECCF0024FAFB /* DetailsViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		48E4AA71219BECED0024FAFB /* Configurator */ = {
-			isa = PBXGroup;
-			children = (
-				48E4AA61219BECCF0024FAFB /* DetailsModuleInitializer.swift */,
-				48E4AA66219BECCF0024FAFB /* DetailsModuleConfigurator.swift */,
-			);
-			path = Configurator;
-			sourceTree = "<group>";
-		};
-		48E4AA72219BECF70024FAFB /* View */ = {
-			isa = PBXGroup;
-			children = (
-				48E4AA63219BECCF0024FAFB /* DetailsView.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		970FEFF3BC3AD5412B9A26E5 /* Pods */ = {
@@ -624,7 +557,6 @@
 				48E4AA02219B56C20024FAFB /* Main.storyboard in Resources */,
 				4819462F219C7558009F59B8 /* Spinner.xib in Resources */,
 				4861544B219CDA2B00EF6F9B /* ActivityLevel.xib in Resources */,
-				4861544D219D59D400EF6F9B /* ActivityCell.xib in Resources */,
 				48615451219D8B9B00EF6F9B /* ActivityElementCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -728,7 +660,6 @@
 				48E4AA36219B57CA0024FAFB /* AutorizationViewController.swift in Sources */,
 				4819464D219CAEB4009F59B8 /* ActivityModel.swift in Sources */,
 				4819464A219CAEB4009F59B8 /* ActivityModuleInitializer.swift in Sources */,
-				48E4AA6C219BECCF0024FAFB /* DetailsModel.swift in Sources */,
 				4819462D219C70B2009F59B8 /* UserData.swift in Sources */,
 				48E4AA51219B73B00024FAFB /* PresenterView.swift in Sources */,
 				48194649219CAEB4009F59B8 /* ActivityViewControllerInput.swift in Sources */,
@@ -741,7 +672,6 @@
 				48E4AA4E219B73B00024FAFB /* PresenterViewControllerInput.swift in Sources */,
 				4819462B219C6B0D009F59B8 /* Constants.swift in Sources */,
 				48E4AA54219B73B00024FAFB /* PresenterModuleConfigurator.swift in Sources */,
-				48E4AA69219BECCF0024FAFB /* DetailsModuleInitializer.swift in Sources */,
 				4819464E219CAEB4009F59B8 /* ActivityModelInput.swift in Sources */,
 				4819464B219CAEB4009F59B8 /* ActivityViewController.swift in Sources */,
 				48E4AA42219B6E820024FAFB /* APIClient.swift in Sources */,
@@ -757,20 +687,14 @@
 				48400ACA219BF99E0058A785 /* DataSource.swift in Sources */,
 				48E4AA3A219B57CA0024FAFB /* AutorizationModuleConfigurator.swift in Sources */,
 				48E4AA50219B73B00024FAFB /* PresenterViewController.swift in Sources */,
-				48E4AA6E219BECCF0024FAFB /* DetailsModuleConfigurator.swift in Sources */,
-				48E4AA6B219BECCF0024FAFB /* DetailsView.swift in Sources */,
-				48E4AA6D219BECCF0024FAFB /* DetailsModelInput.swift in Sources */,
-				48E4AA6A219BECCF0024FAFB /* DetailsViewController.swift in Sources */,
-				4861544F219D59F000EF6F9B /* ActivityCell.swift in Sources */,
 				4819463B219C8A35009F59B8 /* SpinnerView.swift in Sources */,
 				48E4AA5B219B7A5A0024FAFB /* KeychainHolder.swift in Sources */,
 				48E4A9FD219B56C20024FAFB /* AppDelegate.swift in Sources */,
 				48194635219C8809009F59B8 /* GenericResult.swift in Sources */,
 				48194639219C88D3009F59B8 /* URLRequest+Resource.swift in Sources */,
-				48E4AA68219BECCF0024FAFB /* DetailsViewControllerInput.swift in Sources */,
 				48615453219D8F7B00EF6F9B /* ActivityElementCell.swift in Sources */,
+				483FF83C219DFEDF00C11CD0 /* Double+Round.swift in Sources */,
 				48E4AA33219B57CA0024FAFB /* AutorizationModelOutput.swift in Sources */,
-				48E4AA67219BECCF0024FAFB /* DetailsModelOutput.swift in Sources */,
 				48194633219C87E0009F59B8 /* Resource.swift in Sources */,
 				48194648219CAEB4009F59B8 /* ActivityModelOutput.swift in Sources */,
 			);

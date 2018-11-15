@@ -25,12 +25,12 @@ final class AutorizationView: UIView {
 }
 
 // MARK: - AutorizationViewInput
-extension AutorizationView: AutorizationViewInput{
-    //2018-11-11
-func getDate() -> String {
-    let dateFormatter = DateFormatter()
-    dateFormatter.dateFormat = Constants.FitBitUrlApi2.dateFormat
-    return dateFormatter.string(from: datePicker.date)
-}
+extension AutorizationView: AutorizationViewInput {
+
+    func getDate() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = Constants.FitBitUrlApi2.dateFormat
+        return dateFormatter.string(from: datePicker.date)
+    }
 
 }

@@ -1,4 +1,4 @@
-//  
+//
 //  ActivityModelOutput.swift
 //  FitBitApi
 //
@@ -6,4 +6,4 @@
 //  Copyright © 2018 Wishell. All rights reserved.
 //
 
-protocol ActivityModelOutput: class {}
+protocol ActivityModelOutput: class { }

@@ -14,17 +14,17 @@ final class PresenterViewController: UIViewController {
     var model: PresenterModelInput!
     lazy var contentView: PresenterViewInput = { return view as! PresenterViewInput }()
     let dataSource = DataSource()
-    private var prepareClousure: ((UITableView)-> Void)?
-    private var registerClousure: ((UITableView, String)-> Void)?
-    
+    private var prepareClousure: ((UITableView) -> Void)?
+    private var registerClousure: ((UITableView, String) -> Void)?
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        prepareClousure = {[unowned self] (table) in
+        prepareClousure = { [unowned self] (table) in
             table.delegate = self.contentView.self as? UITableViewDelegate
             table.dataSource = self.dataSource
             table.reloadData()
         }
-        registerClousure = {(table, cellName) in
+        registerClousure = { (table, cellName) in
             let nib = UINib(nibName: cellName, bundle: nil)
             table.register(nib, forCellReuseIdentifier: cellName)
         }
@@ -34,21 +34,23 @@ final class PresenterViewController: UIViewController {
         contentView.onTableItemTap = { [unowned self] item in
             if type(of: item) == Category.self {
                 let `item` = item as! Category
-                self.dataSource.items = item.activities
-                self.contentView.registerCell(self.registerClousure!, cellName: "ActivityElementCell")
                 if let subCategories = item.subCategories {
-                    subCategories.compactMap{self.dataSource.items.append($0)}
+                    self.dataSource.items.append(contentsOf: subCategories.compactMap { return $0 })
                     self.contentView.registerCell(self.registerClousure!, cellName: "Category")
                 }
+                self.dataSource.items = item.activities
+                self.contentView.registerCell(self.registerClousure!, cellName: "ActivityElementCell")
                 self.contentView.prepareTable(self.prepareClousure!)
             } else if type(of: item) == ActivityElement.self {
                 let `item` = item as! ActivityElement
                 guard let level = item.activityLevels else { return }
+                let activities = level.compactMap { !$0.name.isEmpty }
+                guard !activities.isEmpty else { return }
                 self.performSegue(withIdentifier: "ActivitySeque", sender: item)
             }
         }
     }
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ActivitySeque", let data = sender as? ActivityElement {
             let controller = segue.destination as! ActivityViewController
@@ -77,9 +79,9 @@ extension PresenterViewController: PresenterModelOutput {
 
 // MARK: - PresenterViewControllerInput
 extension PresenterViewController: PresenterViewControllerInput {
-    
+
     func set (_ date: String) {
         self.model.date = date
     }
-    
+
 }

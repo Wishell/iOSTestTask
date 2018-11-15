@@ -1,4 +1,4 @@
-//  
+//
 //  ActivityModel.swift
 //  FitBitApi
 //
@@ -9,9 +9,8 @@
 import Foundation
 
 final class ActivityModel: ActivityModelInput {
-    
+
     weak var output: ActivityModelOutput!
     var data: [Any]!
-    
-    
+
 }

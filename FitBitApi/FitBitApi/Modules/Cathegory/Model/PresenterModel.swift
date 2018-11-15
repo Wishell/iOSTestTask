@@ -17,7 +17,7 @@ final class PresenterModel: PresenterModelInput {
 
     let repository = Repository(apiClient: APIClient(KeychainHolder()), keychainHolder: KeychainHolder())
 
-    
+
     func load() {
         repository.getActivity(date) { (result) in
             switch result {

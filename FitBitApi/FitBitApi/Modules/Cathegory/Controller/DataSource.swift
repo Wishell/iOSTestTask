@@ -32,7 +32,7 @@ extension DataSource: UITableViewDataSource {
             let `item` = item as! ActivityElement
             cell.name.text = item.name
             if let mets = item.mets {
-                cell.mets.text = String(mets)
+                cell.mets.text = String(mets.rounded(toNumberAfterZero: 3))
             } else {
                 cell.mets.isHidden = true
             }

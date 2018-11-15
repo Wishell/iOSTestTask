@@ -1,4 +1,4 @@
-//  
+//
 //  ActivityViewControllerInput.swift
 //  FitBitApi
 //
@@ -7,7 +7,7 @@
 //
 
 protocol ActivityViewControllerInput: class {
-    
+
     func set (_ data: [Any])
-    
+
 }
