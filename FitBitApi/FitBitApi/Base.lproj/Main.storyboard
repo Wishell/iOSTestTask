@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y7W-0x-u2d">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Qg2-8W-eIs">
+            <objects>
+                <navigationController id="y7W-0x-u2d" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9H7-MO-UeU">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="c65-95-Rrh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N4l-VQ-mkG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2105" y="117"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="AutorizationViewController" id="BYZ-38-t0r" customClass="AutorizationViewController" customModule="FitBitApi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="AutorizationView" customModule="FitBitApi" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEP-mp-5uN">
+                                <rect key="frame" x="131" y="593" width="113.5" height="30"/>
+                                <color key="backgroundColor" red="0.098039215686274508" green="0.46274509803921571" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="IEP-mp-5uN" secondAttribute="height" multiplier="113:30" id="1Fu-a6-a8x"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="OnLoginTap:" destination="8bC-Xf-vdC" eventType="touchUpInside" id="q20-Mn-Ox3"/>
+                                </connections>
+                            </button>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="TZ5-a3-aEh">
+                                <rect key="frame" x="27.5" y="361" width="320" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="563977768.97716296">
+                                    <!--2018-11-15 12:29:28 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8901960784313725" green="0.94901960784313721" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="TZ5-a3-aEh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JCz-81-And"/>
+                            <constraint firstItem="IEP-mp-5uN" firstAttribute="top" secondItem="TZ5-a3-aEh" secondAttribute="bottom" constant="16" id="Kk1-Nq-nP7"/>
+                            <constraint firstItem="IEP-mp-5uN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="PQB-Bj-PIC"/>
+                            <constraint firstItem="IEP-mp-5uN" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.3" constant="1" id="gO2-eg-ms2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IEP-mp-5uN" secondAttribute="bottom" constant="44" id="yte-Bv-FoF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outlet property="datePicker" destination="TZ5-a3-aEh" id="sU9-Ob-3wD"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="About" id="rPr-CB-uSY"/>
+                    <connections>
+                        <segue destination="kCl-xf-I7w" kind="show" identifier="PresenterSeque" id="wHH-3K-0VJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="gUT-b1-LtQ" customClass="AutorizationModuleInitializer" customModule="FitBitApi" customModuleProvider="target">
+                    <connections>
+                        <outlet property="viewController" destination="BYZ-38-t0r" id="rSF-MJ-WHO"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="-1354" y="116"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="npE-lp-Xi8">
+            <objects>
+                <viewController storyboardIdentifier="PresenterViewController" id="kCl-xf-I7w" customClass="CathegoryViewController" customModule="FitBitApi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0lv-xA-xIa" customClass="CathegoryView" customModule="FitBitApi" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="see-dh-hOn" customClass="SpinnerView" customModule="FitBitApi" customModuleProvider="target">
+                                <rect key="frame" x="93.5" y="274.5" width="188.5" height="182"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eo2-yQ-K65">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.52640960940000003" green="0.74396851980000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="eo2-yQ-K65" firstAttribute="trailing" secondItem="7xk-Ja-FAT" secondAttribute="trailing" id="729-Ey-AeG"/>
+                            <constraint firstItem="see-dh-hOn" firstAttribute="centerY" secondItem="eo2-yQ-K65" secondAttribute="centerY" id="CiX-Hh-J6Z"/>
+                            <constraint firstItem="see-dh-hOn" firstAttribute="width" secondItem="7xk-Ja-FAT" secondAttribute="width" multiplier="0.5" constant="1" id="Die-bv-ZA7"/>
+                            <constraint firstItem="eo2-yQ-K65" firstAttribute="bottom" secondItem="7xk-Ja-FAT" secondAttribute="bottom" id="WDu-bq-XWB"/>
+                            <constraint firstItem="see-dh-hOn" firstAttribute="height" secondItem="7xk-Ja-FAT" secondAttribute="height" multiplier="0.3" constant="1" id="YPg-ks-ELs"/>
+                            <constraint firstItem="eo2-yQ-K65" firstAttribute="leading" secondItem="7xk-Ja-FAT" secondAttribute="leading" id="aa1-0t-frx"/>
+                            <constraint firstItem="see-dh-hOn" firstAttribute="centerX" secondItem="eo2-yQ-K65" secondAttribute="centerX" id="svF-Sn-u1V"/>
+                            <constraint firstItem="eo2-yQ-K65" firstAttribute="top" secondItem="7xk-Ja-FAT" secondAttribute="top" id="t4u-9B-aZd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7xk-Ja-FAT"/>
+                        <connections>
+                            <outlet property="SpinnerView" destination="see-dh-hOn" id="JxO-Jr-yUL"/>
+                            <outlet property="spinnerView" destination="see-dh-hOn" id="WJw-9a-ORT"/>
+                            <outlet property="table" destination="eo2-yQ-K65" id="3eX-ME-AAQ"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cathegory" id="d2X-lz-AcP"/>
+                    <connections>
+                        <segue destination="TDT-hg-I6F" kind="show" identifier="ActivitySeque" id="0u4-oc-yvC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c5v-yn-shk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="SIc-CO-nVT" customClass="CathegoryModuleInitializer" customModule="FitBitApi" customModuleProvider="target">
+                    <connections>
+                        <outlet property="viewController" destination="kCl-xf-I7w" id="8Wa-5h-hOR"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="-615" y="116"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="KgG-Yj-TV5">
+            <objects>
+                <viewController id="TDT-hg-I6F" customClass="ActivityViewController" customModule="FitBitApi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mu2-7B-dYE" customClass="ActivityView" customModule="FitBitApi" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Qh-4r-E5C" customClass="SpinnerView" customModule="FitBitApi" customModuleProvider="target">
+                                <rect key="frame" x="93.5" y="265" width="188.5" height="201"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fZI-2T-kyd">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hDf-Rc-C1Q">
+                                    <size key="itemSize" width="128" height="137"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="5wT-ge-mZj">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="137"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="137"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                        <color key="backgroundColor" red="0.55104889639999999" green="0.76349628309999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="1NV-4h-zjl"/>
+                        <connections>
+                            <outlet property="spinnerView" destination="4Qh-4r-E5C" id="mOL-e6-Efc"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Activity" id="n1A-o7-pbC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7wF-bk-j4P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="Dxl-oD-WQ0" customClass="ActivityModuleInitializer" customModule="FitBitApi" customModuleProvider="target">
+                    <connections>
+                        <outlet property="viewController" destination="TDT-hg-I6F" id="bF7-FX-xl1"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="118" y="116"/>
+        </scene>
+    </scenes>
+</document>

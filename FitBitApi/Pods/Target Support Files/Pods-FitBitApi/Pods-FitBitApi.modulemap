@@ -1,0 +1,6 @@
+framework module Pods_FitBitApi {
+  umbrella header "Pods-FitBitApi-umbrella.h"
+
+  export *
+  module * { export * }
+}
