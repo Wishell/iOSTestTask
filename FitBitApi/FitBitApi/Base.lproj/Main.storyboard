@@ -89,8 +89,8 @@
         <!--View Controller-->
         <scene sceneID="npE-lp-Xi8">
             <objects>
-                <viewController storyboardIdentifier="PresenterViewController" id="kCl-xf-I7w" customClass="PresenterViewController" customModule="FitBitApi" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="0lv-xA-xIa" customClass="PresenterView" customModule="FitBitApi" customModuleProvider="target">
+                <viewController storyboardIdentifier="PresenterViewController" id="kCl-xf-I7w" customClass="CathegoryViewController" customModule="FitBitApi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0lv-xA-xIa" customClass="CathegoryView" customModule="FitBitApi" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -127,7 +127,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c5v-yn-shk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="SIc-CO-nVT" customClass="PresenterModuleInitializer" customModule="FitBitApi" customModuleProvider="target">
+                <customObject id="SIc-CO-nVT" customClass="CathegoryModuleInitializer" customModule="FitBitApi" customModuleProvider="target">
                     <connections>
                         <outlet property="viewController" destination="kCl-xf-I7w" id="8Wa-5h-hOR"/>
                     </connections>

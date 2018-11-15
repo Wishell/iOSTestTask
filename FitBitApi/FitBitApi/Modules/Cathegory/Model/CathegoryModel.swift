@@ -9,9 +9,9 @@
 import Foundation
 import KeychainAccess
 
-final class PresenterModel: PresenterModelInput {
+final class CathegoryModel: CathegoryModelInput {
 
-    weak var output: PresenterModelOutput!
+    weak var output: CathegoryModelOutput!
     var holder: KeychainHolder!
     var date: String!
 

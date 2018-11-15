@@ -9,10 +9,10 @@
 import UIKit
 import KeychainAccess
 
-final class PresenterViewController: UIViewController {
+final class CathegoryViewController: UIViewController {
 
-    var model: PresenterModelInput!
-    lazy var contentView: PresenterViewInput = { return view as! PresenterViewInput }()
+    var model: CathegoryModelInput!
+    lazy var contentView: CathegoryViewInput = { return view as! CathegoryViewInput }()
     let dataSource = DataSource()
     private var prepareClousure: ((UITableView) -> Void)?
     private var registerClousure: ((UITableView, String) -> Void)?
@@ -60,7 +60,7 @@ final class PresenterViewController: UIViewController {
 }
 
 // MARK: - PresenterModelOutput
-extension PresenterViewController: PresenterModelOutput {
+extension CathegoryViewController: CathegoryModelOutput {
 
     func modelDidSucces(_ data: Activity) {
         contentView.stopIndicator()
@@ -78,7 +78,7 @@ extension PresenterViewController: PresenterModelOutput {
 }
 
 // MARK: - PresenterViewControllerInput
-extension PresenterViewController: PresenterViewControllerInput {
+extension CathegoryViewController: CathegoryViewControllerInput {
 
     func set (_ date: String) {
         self.model.date = date

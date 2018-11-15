@@ -26,6 +26,7 @@
 		4819464E219CAEB4009F59B8 /* ActivityModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48194646219CAEB4009F59B8 /* ActivityModelInput.swift */; };
 		4819464F219CAEB4009F59B8 /* ActivityModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48194647219CAEB4009F59B8 /* ActivityModuleConfigurator.swift */; };
 		483FF83C219DFEDF00C11CD0 /* Double+Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483FF83B219DFEDF00C11CD0 /* Double+Round.swift */; };
+		483FF83E219E039700C11CD0 /* Date+ToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483FF83D219E039700C11CD0 /* Date+ToString.swift */; };
 		48400ACA219BF99E0058A785 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48400AC9219BF99E0058A785 /* DataSource.swift */; };
 		48615447219CD82700EF6F9B /* Category.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48615446219CD82700EF6F9B /* Category.xib */; };
 		48615449219CD8D600EF6F9B /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48615448219CD8D600EF6F9B /* CategoryCell.swift */; };
@@ -48,14 +49,14 @@
 		48E4AA3A219B57CA0024FAFB /* AutorizationModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA32219B57CA0024FAFB /* AutorizationModuleConfigurator.swift */; };
 		48E4AA40219B580F0024FAFB /* OauthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA3F219B580F0024FAFB /* OauthManager.swift */; };
 		48E4AA42219B6E820024FAFB /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA41219B6E820024FAFB /* APIClient.swift */; };
-		48E4AA4D219B73B00024FAFB /* PresenterModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA45219B73B00024FAFB /* PresenterModelOutput.swift */; };
-		48E4AA4E219B73B00024FAFB /* PresenterViewControllerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA46219B73B00024FAFB /* PresenterViewControllerInput.swift */; };
-		48E4AA4F219B73B00024FAFB /* PresenterModuleInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA47219B73B00024FAFB /* PresenterModuleInitializer.swift */; };
-		48E4AA50219B73B00024FAFB /* PresenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA48219B73B00024FAFB /* PresenterViewController.swift */; };
-		48E4AA51219B73B00024FAFB /* PresenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA49219B73B00024FAFB /* PresenterView.swift */; };
-		48E4AA52219B73B00024FAFB /* PresenterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA4A219B73B00024FAFB /* PresenterModel.swift */; };
-		48E4AA53219B73B00024FAFB /* PresenterModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA4B219B73B00024FAFB /* PresenterModelInput.swift */; };
-		48E4AA54219B73B00024FAFB /* PresenterModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA4C219B73B00024FAFB /* PresenterModuleConfigurator.swift */; };
+		48E4AA4D219B73B00024FAFB /* CathegoryModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA45219B73B00024FAFB /* CathegoryModelOutput.swift */; };
+		48E4AA4E219B73B00024FAFB /* CathegoryViewControllerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA46219B73B00024FAFB /* CathegoryViewControllerInput.swift */; };
+		48E4AA4F219B73B00024FAFB /* CathegoryModuleInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA47219B73B00024FAFB /* CathegoryModuleInitializer.swift */; };
+		48E4AA50219B73B00024FAFB /* CathegoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA48219B73B00024FAFB /* CathegoryViewController.swift */; };
+		48E4AA51219B73B00024FAFB /* CathegoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA49219B73B00024FAFB /* CathegoryView.swift */; };
+		48E4AA52219B73B00024FAFB /* CathegoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA4A219B73B00024FAFB /* CathegoryModel.swift */; };
+		48E4AA53219B73B00024FAFB /* CathegoryModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA4B219B73B00024FAFB /* CathegoryModelInput.swift */; };
+		48E4AA54219B73B00024FAFB /* CathegoryModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA4C219B73B00024FAFB /* CathegoryModuleConfigurator.swift */; };
 		48E4AA5B219B7A5A0024FAFB /* KeychainHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA5A219B7A5A0024FAFB /* KeychainHolder.swift */; };
 		48E4AA5D219B7CA60024FAFB /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4AA5C219B7CA60024FAFB /* Repository.swift */; };
 		9ABC68922AC1DFD590F61746 /* Pods_FitBitApiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA00072470642AB5A420C652 /* Pods_FitBitApiTests.framework */; };
@@ -99,6 +100,7 @@
 		48194646219CAEB4009F59B8 /* ActivityModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModelInput.swift; sourceTree = "<group>"; };
 		48194647219CAEB4009F59B8 /* ActivityModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModuleConfigurator.swift; sourceTree = "<group>"; };
 		483FF83B219DFEDF00C11CD0 /* Double+Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Round.swift"; sourceTree = "<group>"; };
+		483FF83D219E039700C11CD0 /* Date+ToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ToString.swift"; sourceTree = "<group>"; };
 		48400AC9219BF99E0058A785 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		48615446219CD82700EF6F9B /* Category.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Category.xib; sourceTree = "<group>"; };
 		48615448219CD8D600EF6F9B /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
@@ -127,14 +129,14 @@
 		48E4AA32219B57CA0024FAFB /* AutorizationModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutorizationModuleConfigurator.swift; sourceTree = "<group>"; };
 		48E4AA3F219B580F0024FAFB /* OauthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OauthManager.swift; sourceTree = "<group>"; };
 		48E4AA41219B6E820024FAFB /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
-		48E4AA45219B73B00024FAFB /* PresenterModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterModelOutput.swift; sourceTree = "<group>"; };
-		48E4AA46219B73B00024FAFB /* PresenterViewControllerInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterViewControllerInput.swift; sourceTree = "<group>"; };
-		48E4AA47219B73B00024FAFB /* PresenterModuleInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterModuleInitializer.swift; sourceTree = "<group>"; };
-		48E4AA48219B73B00024FAFB /* PresenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterViewController.swift; sourceTree = "<group>"; };
-		48E4AA49219B73B00024FAFB /* PresenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterView.swift; sourceTree = "<group>"; };
-		48E4AA4A219B73B00024FAFB /* PresenterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterModel.swift; sourceTree = "<group>"; };
-		48E4AA4B219B73B00024FAFB /* PresenterModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterModelInput.swift; sourceTree = "<group>"; };
-		48E4AA4C219B73B00024FAFB /* PresenterModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterModuleConfigurator.swift; sourceTree = "<group>"; };
+		48E4AA45219B73B00024FAFB /* CathegoryModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CathegoryModelOutput.swift; sourceTree = "<group>"; };
+		48E4AA46219B73B00024FAFB /* CathegoryViewControllerInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CathegoryViewControllerInput.swift; sourceTree = "<group>"; };
+		48E4AA47219B73B00024FAFB /* CathegoryModuleInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CathegoryModuleInitializer.swift; sourceTree = "<group>"; };
+		48E4AA48219B73B00024FAFB /* CathegoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CathegoryViewController.swift; sourceTree = "<group>"; };
+		48E4AA49219B73B00024FAFB /* CathegoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CathegoryView.swift; sourceTree = "<group>"; };
+		48E4AA4A219B73B00024FAFB /* CathegoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CathegoryModel.swift; sourceTree = "<group>"; };
+		48E4AA4B219B73B00024FAFB /* CathegoryModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CathegoryModelInput.swift; sourceTree = "<group>"; };
+		48E4AA4C219B73B00024FAFB /* CathegoryModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CathegoryModuleConfigurator.swift; sourceTree = "<group>"; };
 		48E4AA5A219B7A5A0024FAFB /* KeychainHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHolder.swift; sourceTree = "<group>"; };
 		48E4AA5C219B7CA60024FAFB /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		6B4275F4C3FF91D3BF411CB1 /* Pods-FitBitApi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitBitApi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FitBitApi/Pods-FitBitApi.debug.xcconfig"; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				4819463D219C959E009F59B8 /* UIAlertController+ErrorDescription.swift */,
 				48194638219C88D3009F59B8 /* URLRequest+Resource.swift */,
 				483FF83B219DFEDF00C11CD0 /* Double+Round.swift */,
+				483FF83D219E039700C11CD0 /* Date+ToString.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -386,9 +389,9 @@
 		48E4AA55219B73B90024FAFB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				48E4AA45219B73B00024FAFB /* PresenterModelOutput.swift */,
-				48E4AA4A219B73B00024FAFB /* PresenterModel.swift */,
-				48E4AA4B219B73B00024FAFB /* PresenterModelInput.swift */,
+				48E4AA45219B73B00024FAFB /* CathegoryModelOutput.swift */,
+				48E4AA4A219B73B00024FAFB /* CathegoryModel.swift */,
+				48E4AA4B219B73B00024FAFB /* CathegoryModelInput.swift */,
 				48E4AA41219B6E820024FAFB /* APIClient.swift */,
 				48E4AA5C219B7CA60024FAFB /* Repository.swift */,
 			);
@@ -398,8 +401,8 @@
 		48E4AA56219B73C00024FAFB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				48E4AA46219B73B00024FAFB /* PresenterViewControllerInput.swift */,
-				48E4AA48219B73B00024FAFB /* PresenterViewController.swift */,
+				48E4AA46219B73B00024FAFB /* CathegoryViewControllerInput.swift */,
+				48E4AA48219B73B00024FAFB /* CathegoryViewController.swift */,
 				48400AC9219BF99E0058A785 /* DataSource.swift */,
 			);
 			path = Controller;
@@ -408,8 +411,8 @@
 		48E4AA57219B73CB0024FAFB /* Configurator */ = {
 			isa = PBXGroup;
 			children = (
-				48E4AA47219B73B00024FAFB /* PresenterModuleInitializer.swift */,
-				48E4AA4C219B73B00024FAFB /* PresenterModuleConfigurator.swift */,
+				48E4AA47219B73B00024FAFB /* CathegoryModuleInitializer.swift */,
+				48E4AA4C219B73B00024FAFB /* CathegoryModuleConfigurator.swift */,
 			);
 			path = Configurator;
 			sourceTree = "<group>";
@@ -417,7 +420,7 @@
 		48E4AA58219B73D50024FAFB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				48E4AA49219B73B00024FAFB /* PresenterView.swift */,
+				48E4AA49219B73B00024FAFB /* CathegoryView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -661,17 +664,17 @@
 				4819464D219CAEB4009F59B8 /* ActivityModel.swift in Sources */,
 				4819464A219CAEB4009F59B8 /* ActivityModuleInitializer.swift in Sources */,
 				4819462D219C70B2009F59B8 /* UserData.swift in Sources */,
-				48E4AA51219B73B00024FAFB /* PresenterView.swift in Sources */,
+				48E4AA51219B73B00024FAFB /* CathegoryView.swift in Sources */,
 				48194649219CAEB4009F59B8 /* ActivityViewControllerInput.swift in Sources */,
 				48E4AA34219B57CA0024FAFB /* AutorizationViewControllerInput.swift in Sources */,
 				48E4AA40219B580F0024FAFB /* OauthManager.swift in Sources */,
 				48E4AA35219B57CA0024FAFB /* AutorizationModuleInitializer.swift in Sources */,
-				48E4AA53219B73B00024FAFB /* PresenterModelInput.swift in Sources */,
+				48E4AA53219B73B00024FAFB /* CathegoryModelInput.swift in Sources */,
 				48E4AA37219B57CA0024FAFB /* AutorizationView.swift in Sources */,
 				4819464C219CAEB4009F59B8 /* ActivityView.swift in Sources */,
-				48E4AA4E219B73B00024FAFB /* PresenterViewControllerInput.swift in Sources */,
+				48E4AA4E219B73B00024FAFB /* CathegoryViewControllerInput.swift in Sources */,
 				4819462B219C6B0D009F59B8 /* Constants.swift in Sources */,
-				48E4AA54219B73B00024FAFB /* PresenterModuleConfigurator.swift in Sources */,
+				48E4AA54219B73B00024FAFB /* CathegoryModuleConfigurator.swift in Sources */,
 				4819464E219CAEB4009F59B8 /* ActivityModelInput.swift in Sources */,
 				4819464B219CAEB4009F59B8 /* ActivityViewController.swift in Sources */,
 				48E4AA42219B6E820024FAFB /* APIClient.swift in Sources */,
@@ -679,14 +682,15 @@
 				4819463E219C959E009F59B8 /* UIAlertController+ErrorDescription.swift in Sources */,
 				48E4AA39219B57CA0024FAFB /* AutorizationModelInput.swift in Sources */,
 				48615449219CD8D600EF6F9B /* CategoryCell.swift in Sources */,
-				48E4AA4D219B73B00024FAFB /* PresenterModelOutput.swift in Sources */,
-				48E4AA52219B73B00024FAFB /* PresenterModel.swift in Sources */,
+				48E4AA4D219B73B00024FAFB /* CathegoryModelOutput.swift in Sources */,
+				48E4AA52219B73B00024FAFB /* CathegoryModel.swift in Sources */,
 				48E4AA38219B57CA0024FAFB /* AutorizationModel.swift in Sources */,
+				483FF83E219E039700C11CD0 /* Date+ToString.swift in Sources */,
 				48E4AA5D219B7CA60024FAFB /* Repository.swift in Sources */,
-				48E4AA4F219B73B00024FAFB /* PresenterModuleInitializer.swift in Sources */,
+				48E4AA4F219B73B00024FAFB /* CathegoryModuleInitializer.swift in Sources */,
 				48400ACA219BF99E0058A785 /* DataSource.swift in Sources */,
 				48E4AA3A219B57CA0024FAFB /* AutorizationModuleConfigurator.swift in Sources */,
-				48E4AA50219B73B00024FAFB /* PresenterViewController.swift in Sources */,
+				48E4AA50219B73B00024FAFB /* CathegoryViewController.swift in Sources */,
 				4819463B219C8A35009F59B8 /* SpinnerView.swift in Sources */,
 				48E4AA5B219B7A5A0024FAFB /* KeychainHolder.swift in Sources */,
 				48E4A9FD219B56C20024FAFB /* AppDelegate.swift in Sources */,

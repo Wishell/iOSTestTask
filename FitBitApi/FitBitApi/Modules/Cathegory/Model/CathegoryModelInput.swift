@@ -7,7 +7,7 @@
 //
 import KeychainAccess
 
-protocol PresenterModelInput {
+protocol CathegoryModelInput {
 
     func load()
     var date: String! {get set}

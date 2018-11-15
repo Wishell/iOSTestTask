@@ -1,5 +1,5 @@
 //
-//  PresenterView.swift
+//  CathegoryView.swift
 //  FitBitApi
 //
 //  Created by Wishell on 14.11.2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol PresenterViewInput: class {
+protocol CathegoryViewInput: class {
 
     func prepareTable (_ prepare: ((UITableView) -> Void))
     func registerCell(_ register: (UITableView, String) -> Void, cellName: String)
@@ -20,7 +20,7 @@ protocol PresenterViewInput: class {
 
 }
 
-final class PresenterView: UIView {
+final class CathegoryView: UIView {
 
     @IBOutlet weak var spinnerView: SpinnerView!
     @IBOutlet weak var table: UITableView!
@@ -30,7 +30,7 @@ final class PresenterView: UIView {
 }
 
 // MARK: - PresenterViewInput
-extension PresenterView: PresenterViewInput {
+extension CathegoryView: CathegoryViewInput {
 
     func prepareTable (_ prepare: ((UITableView) -> Void)) {
         prepare(self.table)
@@ -57,7 +57,7 @@ extension PresenterView: PresenterViewInput {
 }
 
 // MARK: - UITableViewDelegate
-extension PresenterView: UITableViewDelegate {
+extension CathegoryView: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)

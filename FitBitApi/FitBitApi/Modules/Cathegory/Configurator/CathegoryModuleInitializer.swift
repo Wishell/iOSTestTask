@@ -8,12 +8,12 @@
 
 import UIKit
 
-final class PresenterModuleInitializer: NSObject {
+final class CathegoryModuleInitializer: NSObject {
 
-    @IBOutlet weak var viewController: PresenterViewController!
+    @IBOutlet weak var viewController: CathegoryViewController!
 
     override func awakeFromNib() {
-        let configurator = PresenterModuleConfigurator()
+        let configurator = CathegoryModuleConfigurator()
         configurator.configureModuleForViewInput(viewInput: viewController)
     }
 

@@ -8,17 +8,17 @@
 
 import UIKit
 
-final class PresenterModuleConfigurator {
+final class CathegoryModuleConfigurator {
 
     func configureModuleForViewInput<UIViewController>(viewInput: UIViewController) {
-        if let viewController = viewInput as? PresenterViewController {
+        if let viewController = viewInput as? CathegoryViewController {
             configure(viewController: viewController)
         }
     }
 
-    private func configure(viewController: PresenterViewController) {
+    private func configure(viewController: CathegoryViewController) {
         let holder = KeychainHolder()
-        let model = PresenterModel()
+        let model = CathegoryModel()
 
         model.output = viewController
         model.holder = holder

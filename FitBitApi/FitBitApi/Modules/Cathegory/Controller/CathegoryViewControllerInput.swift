@@ -7,7 +7,7 @@
 //
 import KeychainAccess
 
-protocol PresenterViewControllerInput: class {
+protocol CathegoryViewControllerInput: class {
     
     func set (_ date: String)
     

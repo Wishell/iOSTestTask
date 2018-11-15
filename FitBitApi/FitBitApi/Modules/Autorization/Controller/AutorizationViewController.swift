@@ -36,7 +36,7 @@ final class AutorizationViewController: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "PresenterSeque" {
-            let controller = segue.destination as! PresenterViewController
+            let controller = segue.destination as! CathegoryViewController
             controller.set(self.date!)
         }
     }
