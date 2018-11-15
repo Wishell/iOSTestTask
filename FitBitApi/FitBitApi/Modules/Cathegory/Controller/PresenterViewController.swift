@@ -14,31 +14,35 @@ final class PresenterViewController: UIViewController {
     var model: PresenterModelInput!
     lazy var contentView: PresenterViewInput = { return view as! PresenterViewInput }()
     let dataSource = DataSource()
-
+    private var prepareClousure: ((UITableView)-> Void)?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        prepareClousure = {[unowned self] (table) in
+            table.delegate = self.contentView.self as? UITableViewDelegate
+            table.dataSource = self.dataSource
+            table.register(UITableViewCell.self, forCellReuseIdentifier: "\(UITableViewCell.self)")
+            table.reloadData()
+        }
         model.load()
         contentView.startIndicator()
         contentView.tableDataSource = { [unowned self] in return self.dataSource }
         contentView.onTableItemTap = { [unowned self] item in
             if type(of: item) == Category.self {
-                
-                
                 let `item` = item as! Category
                 self.dataSource.items = item.activities
+                guard let subCategories = item.subCategories else {return}
+                subCategories.compactMap{self.dataSource.items.append($0)}
             } else if type(of: item) == ActivityElement.self {
                 let `item` = item as! ActivityElement
                 guard let level = item.activityLevels else { return }
                 self.dataSource.items = level
             }
-            self.contentView.prepare { (table) in
-                table.delegate = self.contentView.self as? UITableViewDelegate
-                table.dataSource = self.dataSource
-                table.register(UITableViewCell.self, forCellReuseIdentifier: "\(UITableViewCell.self)")
-                table.reloadData()
-            }
+            self.contentView.prepare(self.prepareClousure!)
         }
     }
+    
+   
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ActivitySeque", let data = sender as? Category {
@@ -58,7 +62,6 @@ extension PresenterViewController: PresenterModelOutput {
             self.contentView.prepare { (table) in
                 table.delegate = self.contentView.self as? UITableViewDelegate
                 table.dataSource = self.dataSource
-                //table.register(UITableViewCell.self, forCellReuseIdentifier: "\(UITableViewCell.self)")
                 let nib = UINib(nibName: "Category", bundle: nil)
                 table.register(nib, forCellReuseIdentifier: "Category")
                 table.reloadData()

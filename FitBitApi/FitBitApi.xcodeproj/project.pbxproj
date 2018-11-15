@@ -29,6 +29,8 @@
 		48615447219CD82700EF6F9B /* Category.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48615446219CD82700EF6F9B /* Category.xib */; };
 		48615449219CD8D600EF6F9B /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48615448219CD8D600EF6F9B /* CategoryCell.swift */; };
 		4861544B219CDA2B00EF6F9B /* ActivityLevel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4861544A219CDA2B00EF6F9B /* ActivityLevel.xib */; };
+		4861544D219D59D400EF6F9B /* ActivityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4861544C219D59D400EF6F9B /* ActivityCell.xib */; };
+		4861544F219D59F000EF6F9B /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4861544E219D59F000EF6F9B /* ActivityCell.swift */; };
 		48E4A9FD219B56C20024FAFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4A9FC219B56C20024FAFB /* AppDelegate.swift */; };
 		48E4AA02219B56C20024FAFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48E4AA00219B56C20024FAFB /* Main.storyboard */; };
 		48E4AA04219B56C30024FAFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48E4AA03219B56C30024FAFB /* Assets.xcassets */; };
@@ -107,6 +109,8 @@
 		48615446219CD82700EF6F9B /* Category.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Category.xib; sourceTree = "<group>"; };
 		48615448219CD8D600EF6F9B /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		4861544A219CDA2B00EF6F9B /* ActivityLevel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityLevel.xib; sourceTree = "<group>"; };
+		4861544C219D59D400EF6F9B /* ActivityCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityCell.xib; sourceTree = "<group>"; };
+		4861544E219D59F000EF6F9B /* ActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
 		48E4A9F9219B56C20024FAFB /* FitBitApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitBitApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E4A9FC219B56C20024FAFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48E4AA01219B56C20024FAFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -257,6 +261,8 @@
 				48615446219CD82700EF6F9B /* Category.xib */,
 				48615448219CD8D600EF6F9B /* CategoryCell.swift */,
 				4861544A219CDA2B00EF6F9B /* ActivityLevel.xib */,
+				4861544C219D59D400EF6F9B /* ActivityCell.xib */,
+				4861544E219D59F000EF6F9B /* ActivityCell.swift */,
 			);
 			path = Xib;
 			sourceTree = "<group>";
@@ -612,6 +618,7 @@
 				48E4AA02219B56C20024FAFB /* Main.storyboard in Resources */,
 				4819462F219C7558009F59B8 /* Spinner.xib in Resources */,
 				4861544B219CDA2B00EF6F9B /* ActivityLevel.xib in Resources */,
+				4861544D219D59D400EF6F9B /* ActivityCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -747,6 +754,7 @@
 				48E4AA6B219BECCF0024FAFB /* DetailsView.swift in Sources */,
 				48E4AA6D219BECCF0024FAFB /* DetailsModelInput.swift in Sources */,
 				48E4AA6A219BECCF0024FAFB /* DetailsViewController.swift in Sources */,
+				4861544F219D59F000EF6F9B /* ActivityCell.swift in Sources */,
 				4819463B219C8A35009F59B8 /* SpinnerView.swift in Sources */,
 				48E4AA5B219B7A5A0024FAFB /* KeychainHolder.swift in Sources */,
 				48E4A9FD219B56C20024FAFB /* AppDelegate.swift in Sources */,
